@@ -7,3 +7,9 @@ itsdangerous
 Jinja2
 MarkupSafe
 Werkzeug
+langchain
+langchain_ollama
+selenium
+beautifulsoup4
+lxml
+python-dotenv

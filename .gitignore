@@ -2,7 +2,6 @@
 frontend/.next
 frontend/node_modules 
 
-#backend
 backend/venv
 
 #env
