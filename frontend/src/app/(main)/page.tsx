@@ -67,9 +67,14 @@ export default function LandingPage() {
                   </svg>
                   <motion.span
                     initial={{ width: 0 }}
-                    animate={{ width: "100%" }}
-                    transition={{ delay: 1, duration: 1 }}
+                    animate={{ width: "80%" }}
+                    transition={{ delay: 0.5, duration: 1 }}
                     className="inline-block overflow-hidden whitespace-nowrap border-r-2 border-gray-900 dark:border-white z-10"
+                    onAnimationComplete={() => {
+                      document
+                        .querySelector(".border-r-2")
+                        ?.classList.add("border-none");
+                    }}
                   >
                     {" Precision Insights"}
                   </motion.span>
