@@ -168,3 +168,14 @@
 .auth-divider-text {
   @apply mx-4;
 }
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 0.7s infinite;
+}
+
