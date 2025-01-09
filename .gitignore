@@ -7,3 +7,6 @@ backend/venv
 #env
 .env*
 .env.local
+backend/DB/__pycache__
+.dist
+venv
