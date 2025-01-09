@@ -120,6 +120,50 @@ def process_and_answer():
     except Exception as e:
         print("[ERROR]", e)  # Debug log
         return jsonify({"error": str(e)}), 500
+    
+# def processReview(reviews):
+#     try:
+#         data = request.get_json()
+#         websites = data.get('websites', [])
+#         question = data.get('question', '')
+
+#         if not websites or not question:
+#             return jsonify({"error": "Websites or question not provided"}), 400
+
+#         # Call the scraper API
+#         scraper_response = requests.post(
+#             "http://127.0.0.1:5000/api/scrape",  # Replace with your scraper API URL
+#             json={"websites": websites}
+#         )
+
+#         if scraper_response.status_code != 200:
+#             return jsonify({"error": "Failed to scrape websites"}), 500
+
+#         scraper_data = scraper_response.json()
+#         html_array = scraper_data.get('html', [])
+
+#         # Combine all scraped HTML content into one string
+#         combined_data = " ".join(html_array)
+
+#         print("[DEBUG] Combined Scraped Data:", combined_data[:500])  # Debug log
+
+#         # Chunk the content
+#         chunks = chunk_text(combined_data)
+
+#         # Find the most relevant chunk
+#         relevant_chunk, similarity = find_most_relevant_chunk(question, chunks)
+
+#         # Answer the question based on the relevant chunk
+#         if similarity > 0:  # Threshold for relevance
+#             answer = answer_with_gemini(question, relevant_chunk)
+#         else:
+#             answer = "Sorry, I couldn't find relevant information."
+
+#         return jsonify({"answer": answer})
+
+#     except Exception as e:
+#         print("[ERROR]", e)  # Debug log
+#         return jsonify({"error": str(e)}), 500
 
 
 # Existing imports and other functions...

@@ -12,18 +12,43 @@
             margin-top: 10px;
             padding: 8px 12px;
             cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
         }
         pre {
             background: #f4f4f4;
             padding: 10px;
             overflow: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #metadata {
+            display: none; /* Hide metadata section initially */
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h3>Scrape Metadata</h3>
     <button id="scrapeMetadata">Scrape Metadata</button>
     <button id="sendMetadata">Send Metadata</button>
-    <pre id="output"></pre>
+<br>
+    <div id="metadata">
+        <p><strong>Description:</strong> <span id="description"></span></p>
+        <p><strong>Keywords:</strong> <span id="keywords"></span></p>
+        <p><strong>Title:</strong> <span id="title"></span></p>
+    </div>
+    <br>
+    <div id="urlInput">
+        <h3>Get Competitive Analysis</h3>
+        <input type="text" id="url" placeholder="Enter URL">
+        <input type="text" id="url" placeholder="Enter URL">
+        <button id="sendUrl">Send URL</button>
+    </div>
+    <div id="output"></div>
 </body>
 </html>
