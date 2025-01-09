@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import ai 
+# import ai 
 from scraper import scraper as sc
 
 app = Flask(__name__)
