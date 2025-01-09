@@ -64,5 +64,4 @@ def extract_reviews(html_content):
     #      return [review.get_text(strip=True) for review in reviews]
     #  return []
     reviews_divs = soup.find_all('div', class_='EPCmJX')
-    print(reviews_divs)
     return [div.get_text(strip=True) for div in reviews_divs]
