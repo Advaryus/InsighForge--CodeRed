@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from scraper import scraper as sc
 import answer as ans
+import meta as meta
+import comp as comp
 
 app = Flask(__name__)
 
@@ -23,6 +25,12 @@ def scrape():
 @app.route('/process_and_answer', methods=['POST'])
 def process_and_answer():
     return ans.process_and_answer()
+@app.route('/processmeta', methods=['POST'])
+def processmeta():
+    return meta.processmeta()
+@app.route('/processcomp', methods=['POST'])
+def processcomp():
+    return comp.processcomp()
 
 if __name__ == '__main__':
     app.run(debug=True)
