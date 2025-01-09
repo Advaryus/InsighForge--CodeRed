@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-# import ai 
 from scraper import scraper as sc
 
 app = Flask(__name__)
@@ -20,15 +19,6 @@ def scrape():
 
     return jsonify({"html": html_array, "meta": meta_array})
 
-# @app.route('/api/ai', methods=['POST'])
-# def ai():
-#     data = request.get_json()
-#     prompt = data['prompt']
-#     payload = {
-#         'prompt': prompt,
-#         'scraped_data': split_content
-#     }
-#     return jsonify(data)
 
 if __name__ == '__main__':
     app.run(debug=True)
