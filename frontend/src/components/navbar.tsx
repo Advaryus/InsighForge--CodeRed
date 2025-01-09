@@ -19,9 +19,10 @@ import {
 
 const navItems = [
   { name: "Home", href: "#" },
-  { name: "Features", href: "#features" },
-  { name: "How It Works", href: "#how-it-works" },
-  { name: "Pricing", href: "#pricing" },
+  { name: "Compare", href: "/chatbot" },
+  { name: "Meta", href: "/meta" },
+  { name: "Insight", href: "/insights" },
+  { name: "About", href: "/about" },
 ];
 
 const Navbar = () => {

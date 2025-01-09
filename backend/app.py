@@ -1,17 +1,18 @@
 from flask import Flask, request, jsonify
 from scraper import scraper as sc
-
-import answer as ans
+import ai
+# import answer as ans
 
 from bson import ObjectId
 
 from flask_cors import CORS
 from database import db
-import meta as meta
-import comp as comp
+# import meta as meta
+# import comp as comp
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+
 def convert_objectid(data):
     if isinstance(data, list):
         return [convert_objectid(item) for item in data]
@@ -40,9 +41,9 @@ def scrape():
     meta_array = convert_objectid(meta_array)  # Convert ObjectId in meta_array
     return jsonify({"html": html_array, "meta": meta_array, "inserted_ids": inserted_ids})
 
-@app.route('/process_and_answer', methods=['POST'])
-def process_and_answer():
-    return ans.process_and_answer()
+# @app.route('/process_and_answer', methods=['POST'])
+# def process_and_answer():
+#     return ans.process_and_answer()
 
 @app.route('/api/auth/signup', methods=['POST'])
 def signup():
@@ -61,12 +62,12 @@ def signup():
     return jsonify(response)
 
 
-@app.route('/processmeta', methods=['POST'])
-def processmeta():
-    return meta.processmeta()
-@app.route('/processcomp', methods=['POST'])
-def processcomp():
-    return comp.processcomp()
+# @app.route('/processmeta', methods=['POST'])
+# def processmeta():
+#     return meta.processmeta()
+# @app.route('/processcomp', methods=['POST'])
+# def processcomp():
+#     return comp.processcomp()
 
 @app.route('/api/scrape/reviews', methods=['POST'])
 def get_reviews():
@@ -78,7 +79,9 @@ def get_reviews():
         reviews = sc.extract_reviews(html)
         cleaned_content = sc.clean_body('//'.join(reviews))
         reviews_array.append(cleaned_content)
-    return jsonify({"reviews": reviews_array})
+        ai_response = ai.ProductInsightsModel("What are the main insights from these reviews?", cleaned_content)
+
+    return jsonify({"reviews": reviews_array, "ai_response": ai_response.get('llm_insights')})
 
 if __name__ == '__main__':
     app.run(debug=True)

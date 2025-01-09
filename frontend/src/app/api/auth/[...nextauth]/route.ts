@@ -37,7 +37,7 @@ export const authOptions: NextAuthOptions = {
       },
       async authorize(credentials, req) {
         // Fetch user credentials from your endpoint
-        const res = await fetch(`${process.env.NEXTAUTH_URL}/your/endpoint`, {
+        const res = await fetch("http://127.0.0.1:5000/api/signup.", {
           method: "POST",
           body: JSON.stringify(credentials),
           headers: { "Content-Type": "application/json" },
