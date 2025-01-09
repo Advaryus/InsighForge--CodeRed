@@ -57,9 +57,11 @@ def split_dom_content(dom_content, max_length=6000):
 
 def extract_reviews(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
-    reviews_div = soup.find('div', class_='_8-rIO3')
-    return reviews_div
-    # if reviews_div:
-    #     reviews = reviews_div.find_all('div', class_='')
-    #     return [review.get_text(strip=True) for review in reviews]
-    # return []
+    # reviews_div = soup.find('div', class_='_8-rIO3')
+    # return reviews_div
+    #  if reviews_div:
+    #      reviews = reviews_div.find_all('div', class_='')
+    #      return [review.get_text(strip=True) for review in reviews]
+    #  return []
+    reviews_divs = soup.find_all('div', class_='EPCmJX')
+    return [div.get_text(strip=True) for div in reviews_divs]
