@@ -17,12 +17,14 @@ const fetchAIInsights = async (url: string[]) => {
       },
       body: JSON.stringify({ websites: [url] }),
     });
-
+    console.log(response);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
 
     const data = await response.json();
+    console.log("data", data);
+    console.log(data);
     return data;
   } catch (error) {
     console.error("Error fetching insights:", error);

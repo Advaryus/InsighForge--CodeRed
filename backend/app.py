@@ -4,6 +4,9 @@ import ai
 from bson import ObjectId
 from flask_cors import CORS
 from database import db
+import meta
+import comp
+import answer as ans
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
@@ -22,9 +25,15 @@ def convert_objectid(data):
 def not_found(error):
     return jsonify({"error": "Not Found", "message": "The requested URL was not found on the server."}), 404
 
-@app.route('/api', methods=['GET'])
-def home():
-    return jsonify({"message": "Hello, World!"})
+@app.route('/processmeta', methods=['POST'])
+def processmeta():
+    return meta.processmeta()
+@app.route('/processcomp', methods=['POST'])
+def processcomp():
+    return comp.processcomp()
+@app.route('/process_and_answer', methods=['POST'])
+def process_and_answer():
+    return ans.process_and_answer()
 
 @app.route('/api/scrape', methods=['POST'])
 def scrape():
