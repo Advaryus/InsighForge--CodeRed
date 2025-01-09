@@ -9,3 +9,6 @@ backend/venv
 .env.local
 frontend/bun.lockb
 .gitignore
+backend/__pycache__
+backend/scraper/__pycache__
+scraper/__pycache__
