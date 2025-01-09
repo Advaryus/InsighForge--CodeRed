@@ -64,11 +64,8 @@ def get_reviews():
     for site in websites:
         html = sc.scrape_website(site)
         reviews = sc.extract_reviews(html)
-        if reviews:
-            reviews_array.append(reviews)
-    result = db.reviews.insert_many(reviews_array)
-    inserted_ids = [str(id) for id in result.inserted_ids]  # Convert ObjectId to string
-    reviews_array = convert_objectid(reviews_array)  # Convert ObjectId in reviews_array
-    return jsonify({"reviews": reviews_array, "inserted_ids": inserted_ids})
+        cleaned_content = sc.clean_body(reviews)
+        reviews_array.append(cleaned_content)
+    return jsonify({"reviews": reviews_array})
 if __name__ == '__main__':
     app.run(debug=True)
