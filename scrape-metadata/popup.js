@@ -1,3 +1,5 @@
+let scrapedData = null; // Variable to store scraped metadata
+
 document.getElementById("scrapeMetadata").addEventListener("click", async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     chrome.scripting.executeScript(
@@ -7,7 +9,8 @@ document.getElementById("scrapeMetadata").addEventListener("click", async () => 
         },
         (results) => {
             if (results && results[0] && results[0].result) {
-                processInsights(results[0].result);
+                scrapedData = results[0].result; // Store the scraped data
+                displayMetadata(scrapedData);
             } else {
                 document.getElementById("output").textContent = "No metadata or insights found.";
             }
@@ -15,30 +18,23 @@ document.getElementById("scrapeMetadata").addEventListener("click", async () => 
     );
 });
 
-function processInsights(metadata) {
-    const output = document.getElementById("output");
-
-    if (metadata.productInsights && metadata.productInsights !== "N/A") {
-        // Extract meaningful insights from the raw text
-        const insights = metadata.productInsights
-            .split("\n")
-            .map((line) => line.trim()) // Remove extra spaces
-            .filter((line) => line.length > 0 && !line.toLowerCase().includes("ai-generated")); // Remove unwanted lines
-
-        // Structure the insights for better readability
-        const cleanedMetadata = {
-            title: metadata.title,
-            description: metadata.description,
-            keywords: metadata.keywords,
-            url: metadata.url,
-            insights: insights,
-        };
-
-        // Display the cleaned metadata
-        output.textContent = JSON.stringify(cleanedMetadata, null, 2);
-    } else {
-        output.textContent = "No meaningful insights found.";
+document.getElementById("sendMetadata").addEventListener("click", async () => {
+    if (!scrapedData) {
+        document.getElementById("output").textContent = "Please scrape metadata first.";
+        return;
     }
+
+    const response = await sendMetadataToServer({ productInsights: scrapedData.productInsights }, {url: scrapedData.url});
+    if (response.ok) {
+        document.getElementById("output").textContent = "Metadata sent successfully!";
+    } else {
+        document.getElementById("output").textContent = "Failed to send metadata.";
+    }
+});
+
+function displayMetadata(metadata) {
+    const output = document.getElementById("output");
+    output.textContent = JSON.stringify(metadata, null, 2);
 }
 
 function scrapeMetadataFromPage() {
@@ -53,5 +49,21 @@ function scrapeMetadataFromPage() {
     } catch (error) {
         console.error("Error scraping metadata:", error);
         return null;
+    }
+}
+
+async function sendMetadataToServer(metadata) {
+    try {
+        const response = await fetch("http://127.0.0.1:5000/api/process_and_answer", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(metadata),
+        });
+        return response;
+    } catch (error) {
+        console.error("Error sending metadata to server:", error);
+        return { ok: false };
     }
 }
