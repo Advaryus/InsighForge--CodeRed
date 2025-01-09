@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { OAuthButton } from "@/components/oauth-button";
+import { signIn } from "next-auth/react";
 
 export default function SignUpPage() {
   const [email, setEmail] = useState("");
@@ -15,24 +16,24 @@ export default function SignUpPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://127.0.0.1:5000/api/auth/signup', {
-        method: 'POST',
+      const res = await fetch("http://127.0.0.1:5000/api/auth/signup", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email, username, password, cnfpass }),
       });
       console.log(res);
       if (res.ok) {
         // Handle successful signup
-        alert('Registration link sent to your email.');
+        alert("Registration link sent to your email.");
       } else {
         // Handle error
-        alert('Failed to send registration link.');
+        alert("Failed to send registration link.");
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred. Please try again.');
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
     }
   };
 
@@ -64,7 +65,7 @@ export default function SignUpPage() {
           <div className="space-y-4">
             <OAuthButton
               provider="google"
-              onClick={() => {}}
+              onClick={() => signIn("google")}
               variant="signup"
             />
 
