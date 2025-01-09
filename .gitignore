@@ -7,3 +7,5 @@ backend/venv
 #env
 .env*
 .env.local
+frontend/bun.lockb
+.gitignore
