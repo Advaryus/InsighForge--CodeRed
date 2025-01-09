@@ -1,5 +1,6 @@
 let scrapedData = null; // Variable to store scraped metadata
 
+// Listener for scraping metadata
 document.getElementById("scrapeMetadata").addEventListener("click", async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     chrome.scripting.executeScript(
@@ -18,25 +19,33 @@ document.getElementById("scrapeMetadata").addEventListener("click", async () => 
     );
 });
 
+// Listener for sending metadata to the Flask server
 document.getElementById("sendMetadata").addEventListener("click", async () => {
     if (!scrapedData) {
         document.getElementById("output").textContent = "Please scrape metadata first.";
         return;
     }
 
-    const response = await sendMetadataToServer({ productInsights: scrapedData.productInsights }, {url: scrapedData.url});
+    const response = await sendMetadataToServer({
+        productInsights: scrapedData.productInsights,
+        url: scrapedData.url,
+    });
     if (response.ok) {
-        document.getElementById("output").textContent = "Metadata sent successfully!";
+        const responseData = await response.json(); // Parse the JSON response
+        document.getElementById("output").textContent = responseData.answer; // Display only the answer
     } else {
         document.getElementById("output").textContent = "Failed to send metadata.";
     }
+    
 });
 
+// Function to display metadata on the page
 function displayMetadata(metadata) {
     const output = document.getElementById("output");
     output.textContent = JSON.stringify(metadata, null, 2);
 }
 
+// Function to scrape metadata from the page
 function scrapeMetadataFromPage() {
     try {
         return {
@@ -52,6 +61,7 @@ function scrapeMetadataFromPage() {
     }
 }
 
+// Function to send metadata to the Flask server
 async function sendMetadataToServer(metadata) {
     try {
         const response = await fetch("http://127.0.0.1:5000/api/process_and_answer", {
