@@ -50,7 +50,8 @@ document.getElementById("sendUrl").addEventListener("click", async () => {
 
     const response = await sendUrlToServer({ urls });
     if (response.ok) {
-        document.getElementById("output").textContent = "URLs sent successfully!";
+        const responseData = await response.json();
+        document.getElementById("output").textContent = responseData.answer;
     } else {
         document.getElementById("output").textContent = "Failed to send URLs.";
     }
@@ -84,7 +85,7 @@ function scrapeMetadataFromPage() {
 // Function to send metadata to the Flask server
 async function sendMetadataToServer(metadata) {
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/process_and_answer", {
+        const response = await fetch("http://127.0.0.1:5001/api/process_and_answers", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -100,7 +101,7 @@ async function sendMetadataToServer(metadata) {
 
 async function sendUrlToServer(data) {
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/processcomp", {
+        const response = await fetch("http://127.0.0.1:5001/api/processcomps", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

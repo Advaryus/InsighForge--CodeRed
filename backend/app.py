@@ -78,7 +78,10 @@ def get_reviews():
         reviews = sc.extract_reviews(html)
         cleaned_content = sc.clean_body('//'.join(reviews))
         reviews_array.append(cleaned_content)
+        # ans.processReview(cleaned_content)
     return jsonify({"reviews": reviews_array})
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
