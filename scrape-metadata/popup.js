@@ -32,9 +32,32 @@ document.getElementById("sendMetadata").addEventListener("click", async () => {
     }
 });
 
+document.getElementById("sendUrl").addEventListener("click", async () => {
+    const urlElements = document.querySelectorAll("#url");
+    const urls = Array.from(urlElements).map(el => el.value).filter(url => url);
+
+    if (urls.length === 0) {
+        document.getElementById("output").textContent = "Please enter URLs.";
+        return;
+    }
+
+    const response = await sendUrlToServer({ urls });
+    if (response.ok) {
+        document.getElementById("output").textContent = "URLs sent successfully!";
+    } else {
+        document.getElementById("output").textContent = "Failed to send URLs.";
+    }
+});
+
 function displayMetadata(metadata) {
-    const output = document.getElementById("output");
-    output.textContent = JSON.stringify(metadata, null, 2);
+    document.getElementById("description").textContent = metadata.description;
+    document.getElementById("keywords").textContent = metadata.keywords;
+    document.getElementById("title").textContent = metadata.title;
+    const urlElement = document.getElementById("url");
+    urlElement.textContent = metadata.url;
+    urlElement.href = metadata.url;
+    document.getElementById("metadata").style.display = "block";
+
 }
 
 function scrapeMetadataFromPage() {
@@ -42,8 +65,7 @@ function scrapeMetadataFromPage() {
         return {
             title: document.title || "N/A",
             description: document.querySelector('meta[name="description"]')?.content || "N/A",
-            keywords: document.querySelector('meta[name="keywords"]')?.content || "N/A",
-            url: window.location.href || "N/A",
+            keywords: Array.from(document.getElementsByClassName('a-section a-spacing-small a-spacing-top-small _Y3Itc_aspect-symbol-list_24amT')).map(el => el.textContent).join(", ") || "N/A",
             productInsights: document.getElementById("cr-product-insights-cards")?.innerText || "N/A",
         };
     } catch (error) {
@@ -64,6 +86,22 @@ async function sendMetadataToServer(metadata) {
         return response;
     } catch (error) {
         console.error("Error sending metadata to server:", error);
+        return { ok: false };
+    }
+}
+
+async function sendUrlToServer(data) {
+    try {
+        const response = await fetch("http://127.0.0.1:5000/api/processcomp", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
+        return response;
+    } catch (error) {
+        console.error("Error sending URL to server:", error);
         return { ok: false };
     }
 }
