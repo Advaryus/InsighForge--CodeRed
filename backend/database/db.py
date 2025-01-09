@@ -9,7 +9,8 @@ nextUrl = os.getenv('NEXTAUTH_SECRET')
 print(f"MONGODB_URL: {mongoUrl}")
 print(f"NEXTAUTH_URL: {nextUrl}")
 
-client = MongoClient(mongoUrl)
 
+client = MongoClient('MONGO_URI')
 db = client['example']
 metadata = db['metadata']
+users = db['users']
