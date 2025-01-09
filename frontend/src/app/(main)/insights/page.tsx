@@ -10,7 +10,7 @@ import { AIInsightsDisplay } from "@/components/ai-insights-display";
 // Simulated API call
 const fetchAIInsights = async (url: string[]) => {
   try {
-    const response = await fetch("http://127.0.0.1:5000/insights", {
+    const response = await fetch("http://127.0.0.1:5000/api/scrape/reviews", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

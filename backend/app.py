@@ -23,6 +23,10 @@ def convert_objectid(data):
     else:
         return data
 
+@app.route('/api', methods=['GET'])
+def home():
+    return jsonify({"message": "Hello, World!"})
+
 @app.route('/api/scrape', methods=['POST'])
 def scrape():
     data = request.get_json()
