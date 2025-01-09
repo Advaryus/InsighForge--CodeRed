@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { OAuthButton } from "@/components/oauth-button";
+import { signIn } from "next-auth/react";
 
 export default function SignInPage() {
   const [email, setEmail] = useState("");
@@ -23,7 +24,7 @@ export default function SignInPage() {
           href="/"
           className="text-xl font-medium text-gray-900 dark:text-white"
         >
-          scale
+          InsightForge
         </Link>
         <Link
           href="/auth/signup"
@@ -42,8 +43,7 @@ export default function SignInPage() {
         </div>
 
         <div className="space-y-4">
-          <OAuthButton provider="google" onClick={() => {}} variant="signin" />
-          <OAuthButton provider="github" onClick={() => {}} variant="signin" />
+          <OAuthButton provider="google" onClick={() => signIn("google")} variant="signin" />
 
           <div className="relative my-6">
             <div className="absolute inset-0 flex items-center">
