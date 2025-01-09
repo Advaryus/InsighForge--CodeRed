@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from scraper import scraper as sc
+import answer as ans
 
 from flask_cors import CORS
 from database import db
@@ -22,6 +23,10 @@ def scrape():
     # db.metadata.insert_many(meta_array)
     return jsonify({"html": html_array, "meta": meta_array})
 
+@app.route('/process_and_answer', methods=['POST'])
+def process_and_answer():
+    return ans.process_and_answer()
+  
 @app.route('/api/auth/signup', methods=['POST'])
 def signup():
     data = request.get_json()
@@ -37,10 +42,6 @@ def signup():
     }
     # db.users.insert_one(response)
     return jsonify(response)
-
-# @app.route('/api/get', methods=['GET'])
-# def get():
-#     return jsonify({"message": "Hello World!"})
 
 if __name__ == '__main__':
     app.run(debug=True)
