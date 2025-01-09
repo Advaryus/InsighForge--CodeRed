@@ -1,6 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
-import json  # Import json module
+import json
+import brotli
+from flask import Flask, request, jsonify  # Import Flask modules
+
+app = Flask(__name__)
 
 def fetch_product_data(product_url):
     # Set headers to mimic a browser request
@@ -19,7 +23,6 @@ def fetch_product_data(product_url):
     if response.status_code == 200:
         # Decode the content if compressed
         if response.headers.get('Content-Encoding') == 'br':
-            import brotli
             try:
                 html_content = brotli.decompress(response.content).decode('utf-8')
             except brotli.error as e:
@@ -50,10 +53,6 @@ def fetch_product_data(product_url):
                 "Product Details": product_details  # Adding product details to the returned data
             }
 
-            # Save the data to a JSON file
-            with open('product_info.json', 'w') as json_file:
-                json.dump(product_data, json_file, indent=4)
-
             return product_data
         except AttributeError:
             print("Failed to extract one or more elements. Check the HTML structure.")
@@ -62,9 +61,20 @@ def fetch_product_data(product_url):
         print(f"Failed to fetch the webpage. Status code: {response.status_code}")
         return None
 
-# Example usage
-product_url = "https://pricehistory.app/p/tata-salt-1-kg-free-flowing-iodised-Y11mArIm"
-product_data = fetch_product_data(product_url)
-if product_data:
-    for key, value in product_data.items():
-        print(f"{key}: {value}")
+@app.route('/fetch-product-data', methods=['POST'])
+def fetch_product_data_endpoint():
+    urls = request.json.get('urls', [])
+    results = []
+    for url in urls:
+        product_data = fetch_product_data(url)
+        if product_data:
+            results.append(product_data)
+    
+    # Save the data to a JSON file
+    with open('product_info.json', 'w') as json_file:
+        json.dump(results, json_file, indent=4)
+    
+    return jsonify(results)
+
+if __name__ == '__main__':
+    app.run(debug=True)
