@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from scraper import scraper as sc
+from database import db
 
 app = Flask(__name__)
 
@@ -16,7 +17,7 @@ def scrape():
         cleaned_content = sc.clean_body(body_content)
         html_array.append(cleaned_content)
         meta_array.append(meta_content)
-
+    # db.metadata.insert_many(meta_array)
     return jsonify({"html": html_array, "meta": meta_array})
 
 
