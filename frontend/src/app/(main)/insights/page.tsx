@@ -15,7 +15,7 @@ const fetchAIInsights = async (url: string[]) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ urls: [url] }),
+      body: JSON.stringify({ websites: [url] }),
     });
 
     if (!response.ok) {

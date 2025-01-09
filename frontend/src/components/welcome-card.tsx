@@ -12,7 +12,7 @@ export function WelcomeCard({ name, message, submessage }: WelcomeCardProps) {
   return (
     <div className="relative h-[300px] overflow-hidden rounded-lg">
       <Image
-        src="/placeholder.svg?height=300&width=600"
+        src="/user.jpg"
         alt="Welcome"
         width={600}
         height={300}
