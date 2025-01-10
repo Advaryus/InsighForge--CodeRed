@@ -135,7 +135,7 @@ export default function ChatPage() {
         <div
           className={cn(
             "rounded-2xl px-4 py-2 max-w-[85%] break-words",
-            isUser ? "bg-blue-600 text-white" : "bg-gray-100 dark:bg-gray-800"
+            isUser ? "bg-purple-500 text-white" : "bg-gray-100 dark:bg-gray-800"
           )}
         >
           {message}
@@ -147,7 +147,7 @@ export default function ChatPage() {
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 underline"
+                  className="text-white underline"
                 >
                   {link}
                 </a>
@@ -192,13 +192,13 @@ export default function ChatPage() {
       {/* Circular Gradient */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-1/2 -left-1/4 w-full h-full rounded-full bg-gradient-to-br from-blue-300/20 to-purple-300/20 blur-3xl dark:from-blue-900/30 dark:to-purple-900/30" />
-        <div className="absolute -bottom-1/2 -right-1/4 w-full h-full rounded-full bg-gradient-to-tl from-green-300/20 to-yellow-300/20 blur-3xl dark:from-green-900/30 dark:to-yellow-900/30" />
+        <div className="relative -bottom-1/2 -right-1/4 w-full h-full rounded-full bg-gradient-to-tl from-green-300/20 to-yellow-300/20 blur-3xl dark:from-green-900/30 dark:to-yellow-900/30" />
       </div>
 
       {/* Chat Container */}
       <div className="relative mx-auto max-w-4xl px-4 py-8 min-h-screen flex flex-col">
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto space-y-6 pb-24">
+        <div className="mt-20 flex-1 overflow-y-auto space-y-6 pb-24">
           <AnimatePresence>
             {messages.map((message) => (
               <ChatMessage
