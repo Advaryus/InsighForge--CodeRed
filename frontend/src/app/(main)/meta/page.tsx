@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -33,10 +33,14 @@ const fetchAIInsights = async (data: {
 };
 
 export default function AIInsightsPage() {
-  const [urls, setUrls] = useState<string[]>([""]);
+  const [urls, setUrls] = useState<string[]>([]);
   const [question, setQuestion] = useState("");
   const [insights, setInsights] = useState<any>(null);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setUrls([""]);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
