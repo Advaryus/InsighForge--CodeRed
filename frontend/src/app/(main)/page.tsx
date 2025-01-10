@@ -13,8 +13,17 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BackgroundIllustration } from "@/components/background-illustration";
 import { FeedbackForm } from "@/components/feedback-form";
+import { useEffect } from "react";
 
 export default function LandingPage() {
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("http://127.0.0.1:5000/api");
+      const data = await res.json();
+      console.log(data);
+    };
+    fetchData();
+  }, []);
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
       {/* Circular Gradient */}

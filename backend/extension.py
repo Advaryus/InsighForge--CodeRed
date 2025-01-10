@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import google.generativeai as genai
-import extco as comp  # Import the comparison module
+# import extco as comp  # Import the comparison module
 import requests
 from database import db
 from bson import ObjectId
@@ -13,7 +13,7 @@ from scraper import scraper as sc
 import json
 
 # Initialize the Flask app
-app = Flask(__name__)
+app = Flask(_name_)
 CORS(app)
 
 # Initialize the Google Gemini API
@@ -254,5 +254,5 @@ def scrape():
     meta_array = convert_objectid(meta_array)  # Convert ObjectId in meta_array
     return jsonify({"html": html_array, "meta": meta_array, "inserted_ids": inserted_ids})
 # Run Flask app
-if __name__ == "__main__":
+if _name_ == "_main_":
     app.run(debug=True, port=5001)
