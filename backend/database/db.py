@@ -7,7 +7,7 @@ load_dotenv(dotenv_path='../.env.local')
 
 # Get MongoDB URI and database name from environment variables
 mongoUrl = os.getenv('MONGO_URL')
-database_name = os.getenv('example')
+database_name = 'example'
 nextUrl = os.getenv('NEXTAUTH_SECRET')
 
 # Print the loaded environment variables for debugging
