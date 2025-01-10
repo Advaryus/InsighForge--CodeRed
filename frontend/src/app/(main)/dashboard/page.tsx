@@ -6,7 +6,6 @@ import { StatsCard } from "@/components/stats-card"
 import { MetricCard } from "@/components/metric-card"
 import { WelcomeCard } from "@/components/welcome-card"
 import { CircularProgress } from "@/components/circular-progress"
-import { ThemeSwitch } from "@/components/theme-switch"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export default function Dashboard() {
