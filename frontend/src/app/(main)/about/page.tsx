@@ -52,7 +52,7 @@ export default function AboutUs() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-black">
+    <div className="mt-10 min-h-screen bg-gray-50 dark:bg-black">
       <main className="container mx-auto px-4 py-16">
         <section id="features" className="mb-16">
           <motion.h2 
@@ -180,4 +180,3 @@ export default function AboutUs() {
     </div>
   )
 }
-

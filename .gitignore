@@ -7,6 +7,9 @@ backend/venv
 #env
 .env*
 .env.local
-backend/DB/__pycache__
-.dist
-venv
+frontend/bun.lockb
+.gitignore
+backend/__pycache__
+backend/scraper/__pycache__
+scraper/__pycache__
+backend/ai

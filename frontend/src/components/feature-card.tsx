@@ -43,4 +43,3 @@ export function FeatureCard({ title, description, icon }: FeatureCardProps) {
     </motion.div>
   )
 }
-
