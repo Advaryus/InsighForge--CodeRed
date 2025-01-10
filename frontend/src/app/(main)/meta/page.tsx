@@ -33,14 +33,10 @@ const fetchAIInsights = async (data: {
 };
 
 export default function AIInsightsPage() {
-  const [urls, setUrls] = useState<string[]>([]);
+  const [urls, setUrls] = useState<string[]>([""]);
   const [question, setQuestion] = useState("");
   const [insights, setInsights] = useState<any>(null);
   const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setUrls([""]);
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

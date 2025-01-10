@@ -23,6 +23,7 @@ const navItems = [
   { name: "Meta", href: "/meta" },
   { name: "Insight", href: "/insights" },
   { name: "About", href: "/about" },
+  { name: "Reports", href: "/innovate" },
 ];
 
 const Navbar = () => {

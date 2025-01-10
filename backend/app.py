@@ -7,6 +7,8 @@ from database import db
 import meta
 import comp
 import answer as ans
+import s
+import paper
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
@@ -106,7 +108,10 @@ def get_reviews():
     except Exception as e:
         return jsonify({"error": "An unexpected error occurred", "details": str(e)}), 500
 
-
+@app.route('/api/innovate', methods=['POST'])
+def innovate():
+    s.main()
+    return paper.main()
 
 if __name__ == '__main__':
     app.run(debug=True)
