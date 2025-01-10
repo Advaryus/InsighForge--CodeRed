@@ -10,16 +10,22 @@ declare module "next-auth" {
     };
   }
 }
+
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { MongoClient } from "mongodb";
 
 // MongoDB connection function
 const connectToDatabase = async () => {
-  const client = new MongoClient(process.env.MONGODB_URI!);
-  await client.connect();
-  const db = client.db(process.env.MONGODB_DB); // Ensure you set `MONGODB_DB` in your `.env`
-  return { db, client };
+  try {
+    const client = new MongoClient(process.env.MONGO_URL!);
+    await client.connect();
+    const db = client.db("example");
+    return { db, client };
+  } catch (error) {
+    console.error("Failed to connect to MongoDB:", error);
+    throw new Error("Database connection error");
+  }
 };
 
 export const authOptions: NextAuthOptions = {
@@ -35,23 +41,26 @@ export const authOptions: NextAuthOptions = {
         username: { label: "Username", type: "text" },
         password: { label: "Password", type: "password" },
       },
-      async authorize(credentials, req) {
-        // Fetch user credentials from your endpoint
-        const res = await fetch("http://127.0.0.1:5000/api/signup.", {
-          method: "POST",
-          body: JSON.stringify(credentials),
-          headers: { "Content-Type": "application/json" },
-        });
-        const user = await res.json();
+      async authorize(credentials) {
+        try {
+          const res = await fetch("http://127.0.0.1:5000/api/signup", {
+            method: "POST",
+            body: JSON.stringify(credentials),
+            headers: { "Content-Type": "application/json" },
+          });
 
-        if (res.ok && user) {
-          // Add user to MongoDB
+          if (!res.ok) {
+            throw new Error("Invalid credentials");
+          }
+
+          const user = await res.json();
+
+          // Add user to MongoDB if not already present
           const { db, client } = await connectToDatabase();
           try {
             const existingUser = await db.collection("users").findOne({ email: user.email });
 
             if (!existingUser) {
-              // Add the user to the database
               await db.collection("users").insertOne({
                 email: user.email,
                 name: user.name || credentials?.username,
@@ -59,11 +68,14 @@ export const authOptions: NextAuthOptions = {
               });
             }
           } finally {
-            client.close();
+            await client.close();
           }
+
           return user;
+        } catch (error) {
+          console.error("Error in authorize:", error);
+          return null;
         }
-        return null;
       },
     }),
   ],
@@ -74,41 +86,47 @@ export const authOptions: NextAuthOptions = {
   },
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
-    async signIn({ user, account, profile }) {
-      const { db, client } = await connectToDatabase();
+    async signIn({ user, account }) {
       try {
-        // Check if user exists and add them if they don't
-        const existingUser = await db.collection("users").findOne({ email: user.email });
+        const { db, client } = await connectToDatabase();
+        try {
+          const existingUser = await db.collection("users").findOne({ email: user.email });
 
-        if (!existingUser) {
-          await db.collection("users").insertOne({
-            email: user.email,
-            name: user.name,
-            image: user.image,
-            createdAt: new Date(),
-            provider: account?.provider,
-          });
-        }
-      } finally {
-        client.close();
-      }
-      return true;
-    },
-    async session({ session, user }) {
-      // Include user ID in the session
-      const { db, client } = await connectToDatabase();
-      try {
-        const existingUser = await db.collection("users").findOne({ email: session.user?.email });
-
-        if (existingUser) {
-          if (session.user) {
-              session.user.id = existingUser._id.toString();
+          if (!existingUser) {
+            await db.collection("users").insertOne({
+              email: user.email,
+              name: user.name,
+              image: user.image,
+              createdAt: new Date(),
+              provider: account?.provider,
+            });
           }
+        } finally {
+          await client.close();
         }
-      } finally {
-        client.close();
+        return true;
+      } catch (error) {
+        console.error("Error in signIn callback:", error);
+        return false;
       }
-      return session;
+    },
+    async session({ session }) {
+      try {
+        const { db, client } = await connectToDatabase();
+        try {
+          const existingUser = await db.collection("users").findOne({ email: session.user?.email });
+
+          if (existingUser && session.user) {
+            session.user.id = existingUser._id.toString();
+          }
+        } finally {
+          await client.close();
+        }
+        return session;
+      } catch (error) {
+        console.error("Error in session callback:", error);
+        return session;
+      }
     },
   },
 };
