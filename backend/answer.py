@@ -8,6 +8,9 @@ import requests  # For calling the scraper API
 import google.generativeai as genai
 
 
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+
 # Function to chunk text into smaller pieces
 def chunk_text(text, max_length=500):
     chunks = []
@@ -115,7 +118,10 @@ def process_and_answer():
         else:
             answer = "Sorry, I couldn't find relevant information."
 
-        return jsonify({"answer": answer})
+        res= jsonify({"answer": answer})
+        res.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
+        return res
+
 
     except Exception as e:
         print("[ERROR]", e)  # Debug log
