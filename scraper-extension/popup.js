@@ -22,13 +22,30 @@ document.getElementById("scrapeMetadata").addEventListener("click", async () => 
 // Listener for sending metadata to the Flask server
 document.getElementById("sendMetadata").addEventListener("click", async () => {
     if (!scrapedData) {
-        document.getElementById("output").textContent = "Please scrape metadata first.";
-        return;
+        let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+        chrome.scripting.executeScript(
+            {
+                target: { tabId: tab.id },
+                function: scrapeMetadataFromPage,
+            },
+            (results) => {
+                if (results && results[0] && results[0].result) {
+                    scrapedData = results[0].result; // Store the scraped data
+                    sendMetadata(scrapedData);
+                } else {
+                    document.getElementById("output").textContent = "No metadata or insights found.";
+                }
+            }
+        );
+    } else {
+        sendMetadata(scrapedData);
     }
+});
 
+async function sendMetadata(metadata) {
     const response = await sendMetadataToServer({
-        productInsights: scrapedData.productInsights,
-        url: scrapedData.url,
+        productInsights: metadata.productInsights,
+        url: metadata.url,
     });
     if (response.ok) {
         const responseData = await response.json(); // Parse the JSON response
@@ -36,8 +53,7 @@ document.getElementById("sendMetadata").addEventListener("click", async () => {
     } else {
         document.getElementById("output").textContent = "Failed to send metadata.";
     }
-    
-});
+}
 
 document.getElementById("sendUrl").addEventListener("click", async () => {
     const urlElements = document.querySelectorAll("#url");
