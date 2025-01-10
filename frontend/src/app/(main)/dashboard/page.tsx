@@ -18,13 +18,13 @@ export default function Dashboard() {
         {/* Top Stats Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <StatsCard
-            title="Today's Money"
+            title="Total Savings"
             value="$53,000"
             change="+55%"
             icon="dollar"
           />
           <StatsCard
-            title="Today's Users"
+            title="Search Appeared"
             value="2,300"
             change="+5%"
             icon="users"
@@ -32,7 +32,7 @@ export default function Dashboard() {
           <StatsCard
             title="New Clients"
             value="+3,462"
-            change="-2%"
+            change="+20%"
             icon="globe"
           />
           <StatsCard
