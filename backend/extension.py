@@ -13,7 +13,7 @@ from scraper import scraper as sc
 import json
 
 # Initialize the Flask app
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)
 
 # Initialize the Google Gemini API
@@ -254,5 +254,5 @@ def scrape():
     meta_array = convert_objectid(meta_array)  # Convert ObjectId in meta_array
     return jsonify({"html": html_array, "meta": meta_array, "inserted_ids": inserted_ids})
 # Run Flask app
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True, port=5001)
