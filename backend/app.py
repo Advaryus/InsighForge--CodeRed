@@ -106,5 +106,7 @@ def get_reviews():
     except Exception as e:
         return jsonify({"error": "An unexpected error occurred", "details": str(e)}), 500
 
+
+
 if __name__ == '__main__':
     app.run(debug=True)
