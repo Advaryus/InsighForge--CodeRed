@@ -60,7 +60,7 @@ def answer_with_gemini(question, context):
         Question:
         {question}
 
-        Provide the answer in a single, clean sentence:
+        Provide the answer in clean sentence and in a detailed way:
         """
         
         # Call the Gemini API to generate the content
@@ -149,6 +149,7 @@ def processcomp():
         answer = answer_with_gemini(question, context)
 
         return jsonify({"answer": answer})
+        
 
     except Exception as e:
         print("[ERROR]", e)  # Debug log
