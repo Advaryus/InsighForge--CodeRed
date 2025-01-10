@@ -52,9 +52,10 @@ export default function ChatPage() {
       }
 
       const data = await response.json();
-      console.log("API response:", data);
+      return data.answer; // Return the answer from API
     } catch (error) {
       console.error("Error sending data to API:", error);
+      return "Sorry, something went wrong.";
     }
   };
 
@@ -74,20 +75,17 @@ export default function ChatPage() {
     setInput("");
     setLinks([]);
 
-    // Send data to API
-    await sendToApi(newMessage.text, newMessage.links);
+    // Send data to API and get response
+    const apiResponse = await sendToApi(newMessage.text, newMessage.links);
 
-    // Simulate bot response
-    setTimeout(() => {
-      const botResponse = {
-        id: Date.now(),
-        text: "Thanks for your message! I'm processing your request.",
-        isUser: false,
-        timestamp: new Date().toLocaleTimeString(),
-        links: [],
-      };
-      setMessages((prev) => [...prev, botResponse]);
-    }, 1000);
+    const botResponse = {
+      id: Date.now(),
+      text: apiResponse,
+      isUser: false,
+      timestamp: new Date().toLocaleTimeString(),
+      links: [],
+    };
+    setMessages((prev) => [...prev, botResponse]);
   };
 
   const handleAddLink = () => {
