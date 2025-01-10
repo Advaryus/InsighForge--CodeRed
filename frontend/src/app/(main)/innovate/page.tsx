@@ -86,19 +86,23 @@ export default function InnovatePage() {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute -top-1/2 -left-1/4 w-full h-full rounded-full bg-gradient-to-br from-blue-300/20 to-purple-300/20 blur-3xl dark:from-blue-900/30 dark:to-purple-900/30" />
+        <div className="absolute -bottom-1/2 -right-1/4 w-full h-full rounded-full bg-gradient-to-tl from-green-300/20 to-yellow-300/20 blur-3xl dark:from-green-900/30 dark:to-yellow-900/30" />
+      </div>
+
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl mt-8">
             Product Analysis
           </h1>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            Select a product to analyze research papers and get actionable
-            insights
+            Select a product to analyze research papers and get insights
           </p>
         </motion.div>
 
@@ -106,34 +110,38 @@ export default function InnovatePage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="max-w-xl mx-auto space-y-4"
+          className="max-w-xl mx-auto"
         >
-          <Select value={choice} onValueChange={setChoice}>
-            <SelectTrigger>
-              <SelectValue placeholder="Select a product to analyze" />
-            </SelectTrigger>
-            <SelectContent>
-              {AVAILABLE_PRODUCTS.map((product, index) => (
-                <SelectItem key={index + 1} value={(index + 1).toString()}>
-                  {index + 1}. {product}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          <Card className="p-6 shadow-md">
+            <CardContent className="space-y-4">
+              <Select value={choice} onValueChange={setChoice}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select a product to analyze" />
+                </SelectTrigger>
+                <SelectContent>
+                  {AVAILABLE_PRODUCTS.map((product, index) => (
+                    <SelectItem key={index + 1} value={(index + 1).toString()}>
+                      {index + 1}. {product}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
 
-          <Button
-            onClick={handleAnalyze}
-            className="w-full"
-            disabled={!choice || loading}
-          >
-            {loading ? (
-              "Analyzing..."
-            ) : (
-              <>
-                <Search className="mr-2 h-4 w-4" /> Analyze Product
-              </>
-            )}
-          </Button>
+              <Button
+                onClick={handleAnalyze}
+                className="w-full"
+                disabled={!choice || loading}
+              >
+                {loading ? (
+                  "Analyzing..."
+                ) : (
+                  <>
+                    <Search className="mr-2 h-4 w-4" /> Analyze Product
+                  </>
+                )}
+              </Button>
+            </CardContent>
+          </Card>
         </motion.div>
 
         <AnimatePresence>
@@ -145,99 +153,105 @@ export default function InnovatePage() {
               transition={{ duration: 0.5 }}
               className="mt-12 space-y-8"
             >
-              {/* Product Information */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Tag className="mr-2 h-5 w-5" />
-                    Product Information
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-semibold">
-                      {data.product_data.product_name}
-                    </h3>
-                    <div className="flex items-center gap-4">
-                      <div className="flex items-center">
-                        <Star className="h-5 w-5 text-yellow-400" />
-                        <span className="ml-1">{data.product_data.rating}</span>
-                        <span className="text-gray-500 ml-1">
-                          ({data.product_data.review_count} reviews)
-                        </span>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Product Information */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center">
+                      <Tag className="mr-2 h-5 w-5" />
+                      Product Information
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-semibold">
+                        {data.product_data.product_name}
+                      </h3>
+                      <div className="flex items-center gap-4 flex-wrap">
+                        <div className="flex items-center">
+                          <Star className="h-5 w-5 text-yellow-400" />
+                          <span className="ml-1">
+                            {data.product_data.rating}
+                          </span>
+                          <span className="text-gray-500 ml-1">
+                            ({data.product_data.review_count} reviews)
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-2xl font-bold">
+                            {data.product_data.current_price}
+                          </span>
+                          <span className="text-gray-500 line-through">
+                            {data.product_data.original_price}
+                          </span>
+                          <span className="text-green-600">
+                            {data.product_data.discount_percentage}
+                          </span>
+                        </div>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-2xl font-bold">
-                          {data.product_data.current_price}
-                        </span>
-                        <span className="text-gray-500 line-through">
-                          {data.product_data.original_price}
-                        </span>
-                        <span className="text-green-600">
-                          {data.product_data.discount_percentage}
-                        </span>
-                      </div>
+
+                      <Accordion type="single" collapsible>
+                        <AccordionItem value="highlights">
+                          <AccordionTrigger>
+                            Product Highlights
+                          </AccordionTrigger>
+                          <AccordionContent>
+                            <ul className="list-disc pl-5 space-y-2">
+                              {data?.product_data?.product_highlights?.map(
+                                (highlight: string, index: number) => (
+                                  <li key={index}>{highlight}</li>
+                                )
+                              )}
+                            </ul>
+                          </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="offers">
+                          <AccordionTrigger>Available Offers</AccordionTrigger>
+                          <AccordionContent>
+                            <ul className="list-disc pl-5 space-y-2">
+                              {data?.product_data?.available_offers?.map(
+                                (offer: string, index: number) => (
+                                  <li key={index}>{offer}</li>
+                                )
+                              )}
+                            </ul>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
                     </div>
+                  </CardContent>
+                </Card>
 
+                {/* Research Papers */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center">
+                      <Book className="mr-2 h-5 w-5" />
+                      Research Papers
+                    </CardTitle>
+                    <CardDescription>
+                      Relevant academic research for product innovation
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
                     <Accordion type="single" collapsible>
-                      <AccordionItem value="highlights">
-                        <AccordionTrigger>Product Highlights</AccordionTrigger>
-                        <AccordionContent>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {data?.product_data?.product_highlights?.map(
-                              (highlight: string, index: number) => (
-                                <li key={index}>{highlight}</li>
-                              )
-                            )}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
-                      <AccordionItem value="offers">
-                        <AccordionTrigger>Available Offers</AccordionTrigger>
-                        <AccordionContent>
-                          <ul className="list-disc pl-5 space-y-2">
-                            {data?.product_data?.available_offers?.map(
-                              (offer: string, index: number) => (
-                                <li key={index}>{offer}</li>
-                              )
-                            )}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
+                      {data?.papers?.map((paper: any, index: number) => (
+                        <AccordionItem key={index} value={`paper-${index}`}>
+                          <AccordionTrigger>{paper.title}</AccordionTrigger>
+                          <AccordionContent>
+                            <div className="space-y-2">
+                              <p className="text-sm text-gray-500 dark:text-gray-400">
+                                Authors: {paper.authors.join(", ")}
+                              </p>
+                              <p>{paper.summary}</p>
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                      ))}
                     </Accordion>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Research Papers */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Book className="mr-2 h-5 w-5" />
-                    Research Papers
-                  </CardTitle>
-                  <CardDescription>
-                    Relevant academic research for product innovation
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Accordion type="single" collapsible>
-                    {data?.papers?.map((paper: any, index: number) => (
-                      <AccordionItem key={index} value={`paper-${index}`}>
-                        <AccordionTrigger>{paper.title}</AccordionTrigger>
-                        <AccordionContent>
-                          <div className="space-y-2">
-                            <p className="text-sm text-gray-500 dark:text-gray-400">
-                              Authors: {paper.authors.join(", ")}
-                            </p>
-                            <p>{paper.summary}</p>
-                          </div>
-                        </AccordionContent>
-                      </AccordionItem>
-                    ))}
-                  </Accordion>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </div>
 
               {/* Analysis */}
               <Card>

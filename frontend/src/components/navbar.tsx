@@ -24,6 +24,7 @@ const navItems = [
   { name: "Insight", href: "/insights" },
   { name: "About", href: "/about" },
   { name: "Reports", href: "/innovate" },
+  { name: "Price Tracker", href: "/priceTracker" },
 ];
 
 const Navbar = () => {

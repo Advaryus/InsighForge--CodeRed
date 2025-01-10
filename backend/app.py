@@ -9,6 +9,7 @@ import comp
 import answer as ans
 import s
 import paper
+from priceTracker import tracker as tr
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
@@ -112,6 +113,17 @@ def get_reviews():
 def innovate():
     s.main()
     return paper.main()
+
+@app.route('/fetch-product-data', methods=['POST'])
+def fetch_product_data():
+    data = request.get_json()
+    urls = data.get('urls', [])
+    results = []
+    for url in urls:
+        product_data = tr.fetch_product_data(url)
+        if product_data:
+            results.append(product_data)
+    return jsonify(results)
 
 if __name__ == '__main__':
     app.run(debug=True)
