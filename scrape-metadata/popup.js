@@ -1,5 +1,6 @@
 let scrapedData = null; // Variable to store scraped metadata
 
+// Listener for scraping metadata
 document.getElementById("scrapeMetadata").addEventListener("click", async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     chrome.scripting.executeScript(
@@ -18,18 +19,24 @@ document.getElementById("scrapeMetadata").addEventListener("click", async () => 
     );
 });
 
+// Listener for sending metadata to the Flask server
 document.getElementById("sendMetadata").addEventListener("click", async () => {
     if (!scrapedData) {
         document.getElementById("output").textContent = "Please scrape metadata first.";
         return;
     }
 
-    const response = await sendMetadataToServer({ productInsights: scrapedData.productInsights }, {url: scrapedData.url});
+    const response = await sendMetadataToServer({
+        productInsights: scrapedData.productInsights,
+        url: scrapedData.url,
+    });
     if (response.ok) {
-        document.getElementById("output").textContent = "Metadata sent successfully!";
+        const responseData = await response.json(); // Parse the JSON response
+        document.getElementById("output").textContent = responseData.answer; // Display only the answer
     } else {
         document.getElementById("output").textContent = "Failed to send metadata.";
     }
+    
 });
 
 document.getElementById("sendUrl").addEventListener("click", async () => {
@@ -43,7 +50,8 @@ document.getElementById("sendUrl").addEventListener("click", async () => {
 
     const response = await sendUrlToServer({ urls });
     if (response.ok) {
-        document.getElementById("output").textContent = "URLs sent successfully!";
+        const responseData = await response.json();
+        document.getElementById("output").textContent = responseData.answer;
     } else {
         document.getElementById("output").textContent = "Failed to send URLs.";
     }
@@ -74,9 +82,10 @@ function scrapeMetadataFromPage() {
     }
 }
 
+// Function to send metadata to the Flask server
 async function sendMetadataToServer(metadata) {
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/process_and_answer", {
+        const response = await fetch("http://127.0.0.1:5001/api/process_and_answers", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -92,7 +101,7 @@ async function sendMetadataToServer(metadata) {
 
 async function sendUrlToServer(data) {
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/processcomp", {
+        const response = await fetch("http://127.0.0.1:5001/api/processcomps", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
