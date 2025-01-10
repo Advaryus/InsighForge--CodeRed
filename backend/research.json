@@ -1,0 +1,751 @@
+[
+  {
+    "product_data": {
+      "product_name": "Bevzilla 75 Grams X 4 Flavoured Instant Coffee Powder |Strong Coffee Instant Coffee",
+      "current_price": "₹595",
+      "original_price": "₹1,500",
+      "discount_percentage": "60% off",
+      "rating": "4.2",
+      "review_count": "370",
+      "seller_name": "BEVZILLAPvtLtd",
+      "available_offers": [
+        "Combo Offer Buy 2 items save ₹20; Buy 3 or more save ₹40",
+        "Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
+        "Special Price Get extra 7% off (price inclusive of cashback/coupon)"
+      ],
+      "product_highlights": [
+        "Balanced, smooth, and strong without any bitterness with subtle aromatic & delicious notes of pure coffee.",
+        "Gluten-free & Vegan friendly with no preservatives, no additives and no added sugar.",
+        "Tastes Amazing with Hot/Cold with Water/Milk."
+      ]
+    },
+    "papers": [
+      {
+        "title": "Exploring the link between coffee matrix microstructure and flow properties using combined X-ray microtomography and smoothed particle hydrodynamics simulations",
+        "summary": "Coffee extraction involves many complex physical and transport processes\nextremely difficult to model. Among the many factors that will affect the final\nquality of coffee, the microstructure of the coffee matrix is one of the most\ncritical ones. In this article, we use X-ray micro-computed (microCT) technique\nto capture the microscopic details of coffee matrices at particle-level and\nperform fluid dynamics simulation based on the smoothed particle hydrodynamics\nmethod (SPH) with the 3D reconstructured data. Information like flow\npermeability and tortuosity of the matrices can be therefore obtained from our\nsimulation. We found that inertial effects can be quite significant at the\nnormal pressure gradient conditions typical for espresso brewing, and can\nprovide an explanation for the inconsistency of permeability measurements seen\nin the literature. Several types of coffee powder are further examined,\nrevealing their distinct microscopic details and resulting flow features. By\ncomparing the microCT images of pre- and post-extraction coffee matrices, it is\nfound that a decreasing porosity profile (from the bottom-outlet to the\ntop-inlet) always develops after extraction. This counterintuitive phenomenon\ncan be explained using a pressure-dependent erosion model proposed in our prior\nwork. Our results show that microCT scan can provide useful microscopic details\nfor coffee extraction modelling and establish the basis for a data-driven\nnumerical framework to explore the link between coffee powder microstructure\nand extraction dynamics. The latter is the prerequisite to study the time\nevolution of both volatile and non-volatile organic compounds and then the\nflavour profile of coffee brews.",
+        "authors": [
+          "Chaojie Mo",
+          "Richard Johnston",
+          "Luciano Navarini",
+          "Furio Suggi Liverani",
+          "Marco Ellero"
+        ],
+        "url": "http://arxiv.org/pdf/2305.03911v2",
+        "published": "2023-05-06 03:18:41+00:00",
+        "doi": "10.1038/s41598-023-42380-y"
+      },
+      {
+        "title": "At Your Service: Coffee Beans Recommendation From a Robot Assistant",
+        "summary": "With advances in the field of machine learning, precisely algorithms for\nrecommendation systems, robot assistants are envisioned to become more present\nin the hospitality industry. Additionally, the COVID-19 pandemic has also\nhighlighted the need to have more service robots in our everyday lives, to\nminimise the risk of human to-human transmission. One such example would be\ncoffee shops, which have become intrinsic to our everyday lives. However,\nserving an excellent cup of coffee is not a trivial feat as a coffee blend\ntypically comprises rich aromas, indulgent and unique flavours and a lingering\naftertaste. Our work addresses this by proposing a computational model which\nrecommends optimal coffee beans resulting from the user's preferences.\nSpecifically, given a set of coffee bean properties (objective features), we\napply different supervised learning techniques to predict coffee qualities\n(subjective features). We then consider an unsupervised learning method to\nanalyse the relationship between coffee beans in the subjective feature space.\nEvaluated on a real coffee beans dataset based on digitised reviews, our\nresults illustrate that the proposed computational model gives up to 92.7\npercent recommendation accuracy for coffee beans prediction. From this, we\npropose how this computational model can be deployed on a service robot to\nreliably predict customers' coffee bean preferences, starting from the user\ninputting their coffee preferences to the robot recommending the coffee beans\nthat best meet the user's likings.",
+        "authors": [
+          "Jacopo de Berardinis",
+          "Gabriella Pizzuto",
+          "Francesco Lanza",
+          "Antonio Chella",
+          "Jorge Meira",
+          "Angelo Cangelosi"
+        ],
+        "url": "http://arxiv.org/pdf/2008.13585v1",
+        "published": "2020-08-26 14:03:25+00:00",
+        "doi": null
+      },
+      {
+        "title": "Computer Vision-Aided Intelligent Monitoring of Coffee: Towards Sustainable Coffee Production",
+        "summary": "Coffee which is prepared from the grinded roasted seeds of harvested coffee\ncherries, is one of the most consumed beverage and traded commodity, globally.\nTo manually monitor the coffee field regularly, and inform about plant and soil\nhealth, as well as estimate yield and harvesting time, is labor-intensive,\ntime-consuming and error-prone. Some recent studies have developed sensors for\nestimating coffee yield at the time of harvest, however a more inclusive and\napplicable technology to remotely monitor multiple parameters of the field and\nestimate coffee yield and quality even at pre-harvest stage, was missing.\nFollowing precision agriculture approach, we employed machine learning\nalgorithm YOLO, for image processing of coffee plant. In this study, the latest\nversion of the state-of-the-art algorithm YOLOv7 was trained with 324 annotated\nimages followed by its evaluation with 82 unannotated images as test data.\nNext, as an innovative approach for annotating the training data, we trained\nK-means models which led to machine-generated color classes of coffee fruit and\ncould thus characterize the informed objects in the image. Finally, we\nattempted to develop an AI-based handy mobile application which would not only\nefficiently predict harvest time, estimate coffee yield and quality, but also\ninform about plant health. Resultantly, the developed model efficiently\nanalyzed the test data with a mean average precision of 0.89. Strikingly, our\ninnovative semi-supervised method with an mean average precision of 0.77 for\nmulti-class mode surpassed the supervised method with mean average precision of\nonly 0.60, leading to faster and more accurate annotation. The mobile\napplication we designed based on the developed code, was named CoffeApp, which\npossesses multiple features of analyzing fruit from the image taken by phone\ncamera with in field and can thus track fruit ripening in real time.",
+        "authors": [
+          "Francisco Eron",
+          "Muhammad Noman",
+          "Raphael Ricon de Oliveira",
+          "Deigo de Souza Marques",
+          "Rafael Serapilha Durelli",
+          "Andre Pimenta Freire",
+          "Antonio Chalfun Junior"
+        ],
+        "url": "http://arxiv.org/pdf/2304.04966v1",
+        "published": "2023-04-11 04:25:07+00:00",
+        "doi": null
+      },
+      {
+        "title": "Water-induced self-oscillatory processes in colloidal systems by the example of instant coffee",
+        "summary": "Slow long-lived fluctuations of mechanical properties of drying drops of\ninstant coffee water solutions have been found by means of the Drying Drop\nTechnology developed earlier. Parameters of the fluctuations depended on the\nextent of dilution and were not affected by additional hashing of the solution,\nclosing by a cover and shielding from external electromagnetic fields [1-3].\nHere we compared dynamics of physicochemical and morphological processes in\nbulk. We observed microscopically periodic emergence, growth, aggregation and\ndisappearance of spherical cavities (50-250 micrometers in diameter) in bulk of\ndispersion, which was followed by agreed fluctuations of physicochemical\nparameters of the colloidal system. We have shown that those spheres were huge\nhydrate covers of liquid crystal water around colloidal particles. Phase\ntransitions between free and bound (liquid crystal) water in a bulk of a\ncolloidal system is a pacemaker of fluctuations of its physicochemical\nproperties. These changes are regulated and coordinated by the value of osmotic\npressure. At low osmotic pressure hydrate covers grow, forcing out particles\nand ions into the bulk; at high osmotic pressure they collapse to small size,\nreducing osmotic pressure. Existence of self-oscillatory processes was\nconfirmed by a mathematical model.",
+        "authors": [
+          "Tatiana A. Yakhno",
+          "Vladimir G. Yakhno"
+        ],
+        "url": "http://arxiv.org/pdf/1610.04433v2",
+        "published": "2016-10-14 12:37:29+00:00",
+        "doi": null
+      },
+      {
+        "title": "Annihilative fractals of coffee on milk formed by Rayleigh-Taylor instability",
+        "summary": "We have discovered a new fractal pattern, coffee exhibits on a horizontal\nsurface, with a fractal dimension $1.88 \\pm 0.06$, when a heavy coffee droplet\ninteracts with the surface of lighter milk. Parts of coffee pattern on the\nsurface disappear due to Rayleigh-Taylor instability, and the annihilative\nbehavior produces the fractal pattern. Coffee fractals and the Sierpinski\ncarpet have common features, such as the fractal dimension, annihilative\nbehavior, and an exponential decrease of the pattern area. It is suggested the\nformation of fractal follows a rule similar to that of the Sierpinski carpet.",
+        "authors": [
+          "Michiko Shimokawa",
+          "Shonosuke Ohta"
+        ],
+        "url": "http://arxiv.org/pdf/0809.2458v1",
+        "published": "2008-09-15 08:20:44+00:00",
+        "doi": null
+      }
+    ],
+    "analysis": "**Analysis of Research Papers and Actionable Insights for Bevzilla 75 Grams X 4 Flavoured Instant Coffee Powder**\n\n**Potential Technological Innovations:**\n\n1. **Microstructure Analysis**: The first research paper highlights the importance of coffee matrix microstructure in determining the quality of coffee. Bevzilla can invest in X-ray micro-computed tomography (microCT) technology to analyze the microscopic details of their coffee powder and optimize its microstructure for better extraction and flavor.\n2. **Machine Learning-based Recommendation System**: The second research paper proposes a computational model for recommending optimal coffee beans based on user preferences. Bevzilla can develop a similar system to recommend their flavored instant coffee powders to customers based on their taste preferences.\n3. **Computer Vision-Aided Quality Control**: The third research paper demonstrates the use of computer vision and machine learning algorithms for monitoring coffee plant health and estimating yield and quality. Bevzilla can apply similar techniques to monitor the quality of their coffee beans and powder during the production process.\n4. **Self-Oscillatory Processes in Colloidal Systems**: The fourth research paper explores the dynamics of physicochemical and morphological processes in colloidal systems, including instant coffee. Bevzilla can investigate the application of this knowledge to improve the stability and solubility of their instant coffee powder.\n5. **Fractal Pattern Analysis**: The fifth research paper discovers a new fractal pattern formed by the interaction of coffee and milk. Bevzilla can explore the aesthetic and functional implications of this pattern in their product design and packaging.\n\n**Implementation Strategies:**\n\n1. **Collaborate with Researchers**: Bevzilla can collaborate with researchers from the papers to gain a deeper understanding of the technologies and their applications.\n2. **Invest in New Equipment and Software**: Bevzilla can invest in X-ray microCT technology, machine learning algorithms, and computer vision software to implement the proposed innovations.\n3. **Develop a Recommendation System**: Bevzilla can develop a recommendation system based on machine learning algorithms to recommend their flavored instant coffee powders to customers.\n4. **Integrate Quality Control Measures**: Bevzilla can integrate computer vision-aided quality control measures into their production process to monitor the quality of their coffee beans and powder.\n5. **Design and Packaging**: Bevzilla can explore the aesthetic and functional implications of the fractal pattern in their product design and packaging.\n\n**Market Impact and Feasibility:**\n\n1. **Competitive Advantage**: By integrating the proposed innovations, Bevzilla can differentiate themselves from competitors and establish a competitive advantage in the market.\n2. **Customer Satisfaction**: The recommendation system and quality control measures can enhance customer satisfaction by providing personalized recommendations and ensuring consistent quality.\n3. **Market Expansion**: The fractal pattern analysis can lead to new design and packaging ideas, potentially appealing to a wider audience and expanding Bevzilla's market share.\n4. **Cost-Benefit Analysis**: Bevzilla should conduct a cost-benefit analysis to determine the feasibility of implementing the proposed innovations and ensure that the benefits outweigh the costs.\n\n**Actionable Insights:**\n\n1. **Develop a Microstructure Analysis Tool**: Bevzilla can develop a tool to analyze the microscopic details of their coffee powder and optimize its microstructure for better extraction and flavor.\n2. **Integrate a Recommendation System**: Bevzilla can integrate a recommendation system based on machine learning algorithms to recommend their flavored instant coffee powders to customers.\n3. **Implement Computer Vision-Aided Quality Control**: Bevzilla can implement computer vision-aided quality control measures to monitor the quality of their coffee beans and powder during the production process.\n4. **Explore Fractal Pattern Analysis**: Bevzilla can explore the aesthetic and functional implications of the fractal pattern in their product design and packaging.\n5. **Conduct Market Research**: Bevzilla should conduct market research to determine the demand for the proposed innovations and ensure that they align with customer preferences and expectations.",
+    "timestamp": "2025-01-10 07:58:58.392937"
+  },
+  {
+    "product_data": {
+      "product_name": "Bevzilla 75 Grams X 4 Flavoured Instant Coffee Powder |Strong Coffee Instant Coffee",
+      "current_price": "₹595",
+      "original_price": "₹1,500",
+      "discount_percentage": "60% off",
+      "rating": "4.2",
+      "review_count": "370",
+      "seller_name": "BEVZILLAPvtLtd",
+      "available_offers": [
+        "Combo Offer Buy 2 items save ₹20; Buy 3 or more save ₹40",
+        "Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
+        "Special Price Get extra 7% off (price inclusive of cashback/coupon)"
+      ],
+      "product_highlights": [
+        "Balanced, smooth, and strong without any bitterness with subtle aromatic & delicious notes of pure coffee.",
+        "Gluten-free & Vegan friendly with no preservatives, no additives and no added sugar.",
+        "Tastes Amazing with Hot/Cold with Water/Milk."
+      ]
+    },
+    "papers": [
+      {
+        "title": "Exploring the link between coffee matrix microstructure and flow properties using combined X-ray microtomography and smoothed particle hydrodynamics simulations",
+        "summary": "Coffee extraction involves many complex physical and transport processes\nextremely difficult to model. Among the many factors that will affect the final\nquality of coffee, the microstructure of the coffee matrix is one of the most\ncritical ones. In this article, we use X-ray micro-computed (microCT) technique\nto capture the microscopic details of coffee matrices at particle-level and\nperform fluid dynamics simulation based on the smoothed particle hydrodynamics\nmethod (SPH) with the 3D reconstructured data. Information like flow\npermeability and tortuosity of the matrices can be therefore obtained from our\nsimulation. We found that inertial effects can be quite significant at the\nnormal pressure gradient conditions typical for espresso brewing, and can\nprovide an explanation for the inconsistency of permeability measurements seen\nin the literature. Several types of coffee powder are further examined,\nrevealing their distinct microscopic details and resulting flow features. By\ncomparing the microCT images of pre- and post-extraction coffee matrices, it is\nfound that a decreasing porosity profile (from the bottom-outlet to the\ntop-inlet) always develops after extraction. This counterintuitive phenomenon\ncan be explained using a pressure-dependent erosion model proposed in our prior\nwork. Our results show that microCT scan can provide useful microscopic details\nfor coffee extraction modelling and establish the basis for a data-driven\nnumerical framework to explore the link between coffee powder microstructure\nand extraction dynamics. The latter is the prerequisite to study the time\nevolution of both volatile and non-volatile organic compounds and then the\nflavour profile of coffee brews.",
+        "authors": [
+          "Chaojie Mo",
+          "Richard Johnston",
+          "Luciano Navarini",
+          "Furio Suggi Liverani",
+          "Marco Ellero"
+        ],
+        "url": "http://arxiv.org/pdf/2305.03911v2",
+        "published": "2023-05-06 03:18:41+00:00",
+        "doi": "10.1038/s41598-023-42380-y"
+      },
+      {
+        "title": "At Your Service: Coffee Beans Recommendation From a Robot Assistant",
+        "summary": "With advances in the field of machine learning, precisely algorithms for\nrecommendation systems, robot assistants are envisioned to become more present\nin the hospitality industry. Additionally, the COVID-19 pandemic has also\nhighlighted the need to have more service robots in our everyday lives, to\nminimise the risk of human to-human transmission. One such example would be\ncoffee shops, which have become intrinsic to our everyday lives. However,\nserving an excellent cup of coffee is not a trivial feat as a coffee blend\ntypically comprises rich aromas, indulgent and unique flavours and a lingering\naftertaste. Our work addresses this by proposing a computational model which\nrecommends optimal coffee beans resulting from the user's preferences.\nSpecifically, given a set of coffee bean properties (objective features), we\napply different supervised learning techniques to predict coffee qualities\n(subjective features). We then consider an unsupervised learning method to\nanalyse the relationship between coffee beans in the subjective feature space.\nEvaluated on a real coffee beans dataset based on digitised reviews, our\nresults illustrate that the proposed computational model gives up to 92.7\npercent recommendation accuracy for coffee beans prediction. From this, we\npropose how this computational model can be deployed on a service robot to\nreliably predict customers' coffee bean preferences, starting from the user\ninputting their coffee preferences to the robot recommending the coffee beans\nthat best meet the user's likings.",
+        "authors": [
+          "Jacopo de Berardinis",
+          "Gabriella Pizzuto",
+          "Francesco Lanza",
+          "Antonio Chella",
+          "Jorge Meira",
+          "Angelo Cangelosi"
+        ],
+        "url": "http://arxiv.org/pdf/2008.13585v1",
+        "published": "2020-08-26 14:03:25+00:00",
+        "doi": null
+      },
+      {
+        "title": "Computer Vision-Aided Intelligent Monitoring of Coffee: Towards Sustainable Coffee Production",
+        "summary": "Coffee which is prepared from the grinded roasted seeds of harvested coffee\ncherries, is one of the most consumed beverage and traded commodity, globally.\nTo manually monitor the coffee field regularly, and inform about plant and soil\nhealth, as well as estimate yield and harvesting time, is labor-intensive,\ntime-consuming and error-prone. Some recent studies have developed sensors for\nestimating coffee yield at the time of harvest, however a more inclusive and\napplicable technology to remotely monitor multiple parameters of the field and\nestimate coffee yield and quality even at pre-harvest stage, was missing.\nFollowing precision agriculture approach, we employed machine learning\nalgorithm YOLO, for image processing of coffee plant. In this study, the latest\nversion of the state-of-the-art algorithm YOLOv7 was trained with 324 annotated\nimages followed by its evaluation with 82 unannotated images as test data.\nNext, as an innovative approach for annotating the training data, we trained\nK-means models which led to machine-generated color classes of coffee fruit and\ncould thus characterize the informed objects in the image. Finally, we\nattempted to develop an AI-based handy mobile application which would not only\nefficiently predict harvest time, estimate coffee yield and quality, but also\ninform about plant health. Resultantly, the developed model efficiently\nanalyzed the test data with a mean average precision of 0.89. Strikingly, our\ninnovative semi-supervised method with an mean average precision of 0.77 for\nmulti-class mode surpassed the supervised method with mean average precision of\nonly 0.60, leading to faster and more accurate annotation. The mobile\napplication we designed based on the developed code, was named CoffeApp, which\npossesses multiple features of analyzing fruit from the image taken by phone\ncamera with in field and can thus track fruit ripening in real time.",
+        "authors": [
+          "Francisco Eron",
+          "Muhammad Noman",
+          "Raphael Ricon de Oliveira",
+          "Deigo de Souza Marques",
+          "Rafael Serapilha Durelli",
+          "Andre Pimenta Freire",
+          "Antonio Chalfun Junior"
+        ],
+        "url": "http://arxiv.org/pdf/2304.04966v1",
+        "published": "2023-04-11 04:25:07+00:00",
+        "doi": null
+      },
+      {
+        "title": "Water-induced self-oscillatory processes in colloidal systems by the example of instant coffee",
+        "summary": "Slow long-lived fluctuations of mechanical properties of drying drops of\ninstant coffee water solutions have been found by means of the Drying Drop\nTechnology developed earlier. Parameters of the fluctuations depended on the\nextent of dilution and were not affected by additional hashing of the solution,\nclosing by a cover and shielding from external electromagnetic fields [1-3].\nHere we compared dynamics of physicochemical and morphological processes in\nbulk. We observed microscopically periodic emergence, growth, aggregation and\ndisappearance of spherical cavities (50-250 micrometers in diameter) in bulk of\ndispersion, which was followed by agreed fluctuations of physicochemical\nparameters of the colloidal system. We have shown that those spheres were huge\nhydrate covers of liquid crystal water around colloidal particles. Phase\ntransitions between free and bound (liquid crystal) water in a bulk of a\ncolloidal system is a pacemaker of fluctuations of its physicochemical\nproperties. These changes are regulated and coordinated by the value of osmotic\npressure. At low osmotic pressure hydrate covers grow, forcing out particles\nand ions into the bulk; at high osmotic pressure they collapse to small size,\nreducing osmotic pressure. Existence of self-oscillatory processes was\nconfirmed by a mathematical model.",
+        "authors": [
+          "Tatiana A. Yakhno",
+          "Vladimir G. Yakhno"
+        ],
+        "url": "http://arxiv.org/pdf/1610.04433v2",
+        "published": "2016-10-14 12:37:29+00:00",
+        "doi": null
+      },
+      {
+        "title": "Annihilative fractals of coffee on milk formed by Rayleigh-Taylor instability",
+        "summary": "We have discovered a new fractal pattern, coffee exhibits on a horizontal\nsurface, with a fractal dimension $1.88 \\pm 0.06$, when a heavy coffee droplet\ninteracts with the surface of lighter milk. Parts of coffee pattern on the\nsurface disappear due to Rayleigh-Taylor instability, and the annihilative\nbehavior produces the fractal pattern. Coffee fractals and the Sierpinski\ncarpet have common features, such as the fractal dimension, annihilative\nbehavior, and an exponential decrease of the pattern area. It is suggested the\nformation of fractal follows a rule similar to that of the Sierpinski carpet.",
+        "authors": [
+          "Michiko Shimokawa",
+          "Shonosuke Ohta"
+        ],
+        "url": "http://arxiv.org/pdf/0809.2458v1",
+        "published": "2008-09-15 08:20:44+00:00",
+        "doi": null
+      }
+    ],
+    "analysis": "**Analysis of Research Papers and Actionable Insights for Bevzilla 75 Grams X 4 Flavoured Instant Coffee Powder**\n\n**Potential Technological Innovations:**\n\n1. **Microstructure Analysis**: The first research paper highlights the importance of coffee matrix microstructure in determining the quality of coffee. Bevzilla can invest in X-ray micro-computed tomography (microCT) technology to analyze the microscopic details of their coffee powder and optimize its microstructure for better extraction and flavor.\n2. **Machine Learning-based Recommendation System**: The second research paper proposes a computational model for recommending optimal coffee beans based on user preferences. Bevzilla can develop a similar system to recommend their flavored instant coffee powders to customers based on their taste preferences.\n3. **Computer Vision-Aided Quality Control**: The third research paper demonstrates the use of computer vision and machine learning algorithms for monitoring coffee plant health and estimating yield and quality. Bevzilla can apply similar techniques to monitor the quality of their coffee beans and powder during the production process.\n4. **Self-Oscillatory Processes in Colloidal Systems**: The fourth research paper explores the dynamics of physicochemical and morphological processes in colloidal systems, including instant coffee. Bevzilla can investigate the application of this knowledge to improve the stability and solubility of their instant coffee powder.\n5. **Fractal Pattern Analysis**: The fifth research paper discovers a new fractal pattern formed by the interaction of coffee and milk. Bevzilla can explore the aesthetic and functional implications of this pattern in their product design and packaging.\n\n**Implementation Strategies:**\n\n1. **Collaborate with Researchers**: Bevzilla can collaborate with researchers from the papers to gain a deeper understanding of the technologies and their applications.\n2. **Invest in New Equipment and Software**: Bevzilla can invest in X-ray microCT technology, machine learning algorithms, and computer vision software to implement the proposed innovations.\n3. **Develop a Recommendation System**: Bevzilla can develop a recommendation system based on machine learning algorithms to recommend their flavored instant coffee powders to customers.\n4. **Integrate Quality Control Measures**: Bevzilla can integrate computer vision-aided quality control measures into their production process to monitor the quality of their coffee beans and powder.\n5. **Design and Packaging**: Bevzilla can explore the aesthetic and functional implications of the fractal pattern in their product design and packaging.\n\n**Market Impact and Feasibility:**\n\n1. **Competitive Advantage**: By integrating the proposed innovations, Bevzilla can differentiate themselves from competitors and establish a competitive advantage in the market.\n2. **Customer Satisfaction**: The recommendation system and quality control measures can enhance customer satisfaction by providing personalized recommendations and ensuring consistent quality.\n3. **Market Expansion**: The fractal pattern analysis can lead to new design and packaging ideas, potentially appealing to a wider audience and expanding Bevzilla's market share.\n4. **Cost-Benefit Analysis**: Bevzilla should conduct a cost-benefit analysis to determine the feasibility of implementing the proposed innovations and ensure that the benefits outweigh the costs.\n\n**Actionable Insights:**\n\n1. **Develop a Microstructure Analysis Tool**: Bevzilla can develop a tool to analyze the microscopic details of their coffee powder and optimize its microstructure for better extraction and flavor.\n2. **Integrate a Recommendation System**: Bevzilla can integrate a recommendation system based on machine learning algorithms to recommend their flavored instant coffee powders to customers.\n3. **Implement Computer Vision-Aided Quality Control**: Bevzilla can implement computer vision-aided quality control measures to monitor the quality of their coffee beans and powder during the production process.\n4. **Explore Fractal Pattern Analysis**: Bevzilla can explore the aesthetic and functional implications of the fractal pattern in their product design and packaging.\n5. **Conduct Market Research**: Bevzilla should conduct market research to determine the demand for the proposed innovations and ensure that they align with customer preferences and expectations.",
+    "timestamp": "2025-01-10 09:18:14.588724"
+  },
+  {
+    "product_data": {
+      "product_name": "HITMAN 2 SILENT ASSASSIN",
+      "current_price": "₹ 151990.00"
+    },
+    "papers": [
+      {
+        "title": "Chemical and forensic analysis of JFK assassination bullet lots: Is a second shooter possible?",
+        "summary": "The assassination of President John Fitzgerald Kennedy (JFK) traumatized the\nnation. In this paper we show that evidence used to rule out a second assassin\nis fundamentally flawed. This paper discusses new compositional analyses of\nbullets reportedly to have been derived from the same batch as those used in\nthe assassination. The new analyses show that the bullet fragments involved in\nthe assassination are not nearly as rare as previously reported. In particular,\nthe new test results are compared to key bullet composition testimony presented\nbefore the House Select Committee on Assassinations (HSCA). Matches of bullets\nwithin the same box of bullets are shown to be much more likely than indicated\nin the House Select Committee on Assassinations' testimony. Additionally, we\nshow that one of the ten test bullets is considered a match to one or more\nassassination fragments. This finding means that the bullet fragments from the\nassassination that match could have come from three or more separate bullets.\nFinally, this paper presents a case for reanalyzing the assassination bullet\nfragments and conducting the necessary supporting scientific studies. These\nanalyses will shed light on whether the five bullet fragments constitute three\nor more separate bullets. If the assassination fragments are derived from three\nor more separate bullets, then a second assassin is likely, as the additional\nbullet would not easily be attributable to the main suspect, Mr. Oswald, under\nwidely accepted shooting scenarios [see Posner (1993), Case Closed, Bantam, New\nYork].",
+        "authors": [
+          "Cliff Spiegelman",
+          "William A. Tobin",
+          "William D. James",
+          "Simon J. Sheather",
+          "Stuart Wexler",
+          "D. Max Roundhill"
+        ],
+        "url": "http://arxiv.org/pdf/0712.2150v1",
+        "published": "2007-12-13 13:29:54+00:00",
+        "doi": "10.1214/07-AOAS119"
+      },
+      {
+        "title": "Letter to the editor. NAA and JFK: Can revisionism take us home?",
+        "summary": "Occasionally during the course of the human learning experience we are faced\nwith an anomaly. An aberration of sorts, which try as we might, defies\nappropriate classification. The recent paper by Spiegelman et al.--Chemical and\nforensic analysis of JFK assassination bullet lots: Is a second shooter\npossible?--is one such aberration. It is riddled with both misconceptions and\nerrors of fact. Purporting to cast doubt on the NAA (neutron activation\nanalysis) work conducted by Dr. Vincent Guinn in the investigation of the\nassassination of President John F. Kennedy, it fails miserably. The paper\noffers two central conclusions, one which is demonstrably false, and the other\nwhich is specious. The authors opine; ``If the assassination fragments are\nderived from three or more separate bullets, then a second assassin is likely,\nas the additional bullet would not be attributable to the main suspect, Mr.\nOswald.'' This statement relating to the likelihood of a second assassin based\non the premise of three or more separate bullets is demonstrably false. The\navailable evidence indicates that Oswald fired three shots, one of which is\nbelieved to have missed. However, on the off chance that all three shots hit\n(even though there is absolutely no other supporting forensic evidence for such\na notion) those three shots alone in no way would indicate then that ``a second\nassassin is likely.'' The authors' erroneous conclusion was achieved because\nthey have either been misled (which I personally believe is the case) or they\nsimply aren't familiar with the evidence.",
+        "authors": [
+          "John E. Fiorentino"
+        ],
+        "url": "http://arxiv.org/pdf/0803.4055v1",
+        "published": "2008-03-28 07:47:41+00:00",
+        "doi": "10.1214/07-AOAS153"
+      },
+      {
+        "title": "Explainable AI for Embedded Systems Design: A Case Study of Static Redundant NVM Memory Write Prediction",
+        "summary": "This paper investigates the application of eXplainable Artificial\nIntelligence (XAI) in the design of embedded systems using machine learning\n(ML). As a case study, it addresses the challenging problem of static silent\nstore prediction. This involves identifying redundant memory writes based only\non static program features. Eliminating such stores enhances performance and\nenergy efficiency by reducing memory access and bus traffic, especially in the\npresence of emerging non-volatile memory technologies. To achieve this, we\npropose a methodology consisting of: 1) the development of relevant ML models\nfor explaining silent store prediction, and 2) the application of XAI to\nexplain these models. We employ two state-of-the-art model-agnostic XAI methods\nto analyze the causes of silent stores. Through the case study, we evaluate the\neffectiveness of the methods. We find that these methods provide explanations\nfor silent store predictions, which are consistent with known causes of silent\nstore occurrences from previous studies. Typically, this allows us to confirm\nthe prevalence of silent stores in operations that write the zero constant into\nmemory, or the absence of silent stores in operations involving loop induction\nvariables. This suggests the potential relevance of XAI in analyzing ML models'\ndecision in embedded system design. From the case study, we share some valuable\ninsights and pitfalls we encountered. More generally, this study aims to lay\nthe groundwork for future research in the emerging field of XAI for embedded\nsystem design.",
+        "authors": [
+          "Abdoulaye Gamatié",
+          "Yuyang Wang"
+        ],
+        "url": "http://arxiv.org/pdf/2403.04337v1",
+        "published": "2024-03-07 09:02:11+00:00",
+        "doi": null
+      },
+      {
+        "title": "The Effects of Political Martyrdom on Election Results: The Assassination of Abe",
+        "summary": "In developed nations assassinations are rare and thus the impact of such acts\non the electoral and political landscape is understudied. In this paper, we\nfocus on Twitter data to examine the effects of Japan's former Primer Minister\nAbe's assassination on the Japanese House of Councillors elections in 2022. We\nutilize sentiment analysis and emotion detection together with topic modeling\non over 2 million tweets and compare them against tweets during previous\nelection cycles. Our findings indicate that Twitter sentiments were negatively\nimpacted by the event in the short term and that social media attention span\nhas shortened. We also discuss how \"necropolitics\" affected the outcome of the\nelections in favor of the deceased's party meaning that there seems to have\nbeen an effect of Abe's death on the election outcome though the findings\nwarrant further investigation for conclusive results.",
+        "authors": [
+          "Miu Nicole Takagi"
+        ],
+        "url": "http://arxiv.org/pdf/2305.18004v2",
+        "published": "2023-05-29 10:33:08+00:00",
+        "doi": "10.46298/jdmdh.11391"
+      },
+      {
+        "title": "Harnessing AI for Speech Reconstruction using Multi-view Silent Video Feed",
+        "summary": "Speechreading or lipreading is the technique of understanding and getting\nphonetic features from a speaker's visual features such as movement of lips,\nface, teeth and tongue. It has a wide range of multimedia applications such as\nin surveillance, Internet telephony, and as an aid to a person with hearing\nimpairments. However, most of the work in speechreading has been limited to\ntext generation from silent videos. Recently, research has started venturing\ninto generating (audio) speech from silent video sequences but there have been\nno developments thus far in dealing with divergent views and poses of a\nspeaker. Thus although, we have multiple camera feeds for the speech of a user,\nbut we have failed in using these multiple video feeds for dealing with the\ndifferent poses. To this end, this paper presents the world's first ever\nmulti-view speech reading and reconstruction system. This work encompasses the\nboundaries of multimedia research by putting forth a model which leverages\nsilent video feeds from multiple cameras recording the same subject to generate\nintelligent speech for a speaker. Initial results confirm the usefulness of\nexploiting multiple camera views in building an efficient speech reading and\nreconstruction system. It further shows the optimal placement of cameras which\nwould lead to the maximum intelligibility of speech. Next, it lays out various\ninnovative applications for the proposed system focusing on its potential\nprodigious impact in not just security arena but in many other multimedia\nanalytics problems.",
+        "authors": [
+          "Yaman Kumar",
+          "Mayank Aggarwal",
+          "Pratham Nawal",
+          "Shin'ichi Satoh",
+          "Rajiv Ratn Shah",
+          "Roger Zimmerman"
+        ],
+        "url": "http://arxiv.org/pdf/1807.00619v2",
+        "published": "2018-07-02 12:16:55+00:00",
+        "doi": "10.1145/3240508.3241911"
+      }
+    ],
+    "analysis": "**Analysis of Research Papers and Potential Integration into HITMAN 2 SILENT ASSASSIN**\n\nThe research papers provided cover a range of topics, including forensic analysis, explainable AI, and speech reconstruction. While some papers may seem unrelated to the game HITMAN 2 SILENT ASSASSIN, they can still provide valuable insights and inspiration for innovative features and technological enhancements.\n\n**Potential Technological Innovations:**\n\n1. **Advanced Forensic Analysis**: The paper \"Chemical and forensic analysis of JFK assassination bullet lots: Is a second shooter possible?\" demonstrates the use of advanced forensic analysis techniques to investigate crimes. This concept can be applied to the game by introducing a forensic analysis system that allows players to analyze clues and piece together the events of a crime scene.\n2. **Explainable AI**: The paper \"Explainable AI for Embedded Systems Design: A Case Study of Static Redundant NVM Memory Write Prediction\" showcases the use of explainable AI in embedded systems design. This technology can be integrated into the game to create more realistic and dynamic NPC behaviors, making the game more immersive and challenging.\n3. **Speech Reconstruction**: The paper \"Harnessing AI for Speech Reconstruction using Multi-view Silent Video Feed\" presents a system for reconstructing speech from silent video feeds. This technology can be used to create a more realistic and interactive experience in the game, allowing players to lip-read and understand NPC conversations.\n\n**Implementation Strategies:**\n\n1. **Integrate Forensic Analysis System**: Develop a forensic analysis system that allows players to analyze clues and piece together the events of a crime scene. This can be done by introducing a new gameplay mechanic that involves collecting and analyzing evidence.\n2. **Implement Explainable AI**: Integrate explainable AI into the game's NPC behaviors, making them more realistic and dynamic. This can be done by using machine learning algorithms to create more complex NPC behaviors.\n3. **Add Speech Reconstruction Feature**: Introduce a speech reconstruction feature that allows players to lip-read and understand NPC conversations. This can be done by using AI-powered speech recognition technology.\n\n**Market Impact and Feasibility:**\n\n1. **Competitive Advantage**: Integrating advanced forensic analysis, explainable AI, and speech reconstruction features can give HITMAN 2 SILENT ASSASSIN a competitive advantage in the market.\n2. **Enhanced Gameplay Experience**: These features can enhance the gameplay experience, making it more immersive and challenging for players.\n3. **Increased Customer Satisfaction**: By providing a more realistic and interactive experience, the game can increase customer satisfaction and loyalty.\n\n**Actionable Insights:**\n\n1. **Specific Features or Functionalities**:\n\t* Introduce a forensic analysis system that allows players to analyze clues and piece together the events of a crime scene.\n\t* Implement explainable AI into NPC behaviors, making them more realistic and dynamic.\n\t* Add a speech reconstruction feature that allows players to lip-read and understand NPC conversations.\n2. **Relevant Technological Enhancements**:\n\t* Use advanced forensic analysis techniques to create a more realistic and immersive gameplay experience.\n\t* Integrate explainable AI into the game's NPC behaviors, making them more complex and realistic.\n\t* Utilize AI-powered speech recognition technology to create a more interactive and immersive experience.\n3. **Ways to Achieve Market Differentiation and Enhance Customer Satisfaction**:\n\t* Focus on creating a more realistic and immersive gameplay experience.\n\t* Introduce innovative features that set the game apart from its competitors.\n\t* Prioritize customer satisfaction and feedback, making adjustments and improvements to the game based on player feedback.\n\nBy integrating these features and technologies, HITMAN 2 SILENT ASSASSIN can differentiate itself in the market and provide a more immersive and challenging experience for players.",
+    "timestamp": "2025-01-10 09:39:53.795845"
+  },
+  {
+    "product_data": {
+      "product_name": "HITMAN 2 SILENT ASSASSIN",
+      "current_price": "₹ 151990.00"
+    },
+    "papers": [
+      {
+        "title": "Chemical and forensic analysis of JFK assassination bullet lots: Is a second shooter possible?",
+        "summary": "The assassination of President John Fitzgerald Kennedy (JFK) traumatized the\nnation. In this paper we show that evidence used to rule out a second assassin\nis fundamentally flawed. This paper discusses new compositional analyses of\nbullets reportedly to have been derived from the same batch as those used in\nthe assassination. The new analyses show that the bullet fragments involved in\nthe assassination are not nearly as rare as previously reported. In particular,\nthe new test results are compared to key bullet composition testimony presented\nbefore the House Select Committee on Assassinations (HSCA). Matches of bullets\nwithin the same box of bullets are shown to be much more likely than indicated\nin the House Select Committee on Assassinations' testimony. Additionally, we\nshow that one of the ten test bullets is considered a match to one or more\nassassination fragments. This finding means that the bullet fragments from the\nassassination that match could have come from three or more separate bullets.\nFinally, this paper presents a case for reanalyzing the assassination bullet\nfragments and conducting the necessary supporting scientific studies. These\nanalyses will shed light on whether the five bullet fragments constitute three\nor more separate bullets. If the assassination fragments are derived from three\nor more separate bullets, then a second assassin is likely, as the additional\nbullet would not easily be attributable to the main suspect, Mr. Oswald, under\nwidely accepted shooting scenarios [see Posner (1993), Case Closed, Bantam, New\nYork].",
+        "authors": [
+          "Cliff Spiegelman",
+          "William A. Tobin",
+          "William D. James",
+          "Simon J. Sheather",
+          "Stuart Wexler",
+          "D. Max Roundhill"
+        ],
+        "url": "http://arxiv.org/pdf/0712.2150v1",
+        "published": "2007-12-13 13:29:54+00:00",
+        "doi": "10.1214/07-AOAS119"
+      },
+      {
+        "title": "Letter to the editor. NAA and JFK: Can revisionism take us home?",
+        "summary": "Occasionally during the course of the human learning experience we are faced\nwith an anomaly. An aberration of sorts, which try as we might, defies\nappropriate classification. The recent paper by Spiegelman et al.--Chemical and\nforensic analysis of JFK assassination bullet lots: Is a second shooter\npossible?--is one such aberration. It is riddled with both misconceptions and\nerrors of fact. Purporting to cast doubt on the NAA (neutron activation\nanalysis) work conducted by Dr. Vincent Guinn in the investigation of the\nassassination of President John F. Kennedy, it fails miserably. The paper\noffers two central conclusions, one which is demonstrably false, and the other\nwhich is specious. The authors opine; ``If the assassination fragments are\nderived from three or more separate bullets, then a second assassin is likely,\nas the additional bullet would not be attributable to the main suspect, Mr.\nOswald.'' This statement relating to the likelihood of a second assassin based\non the premise of three or more separate bullets is demonstrably false. The\navailable evidence indicates that Oswald fired three shots, one of which is\nbelieved to have missed. However, on the off chance that all three shots hit\n(even though there is absolutely no other supporting forensic evidence for such\na notion) those three shots alone in no way would indicate then that ``a second\nassassin is likely.'' The authors' erroneous conclusion was achieved because\nthey have either been misled (which I personally believe is the case) or they\nsimply aren't familiar with the evidence.",
+        "authors": [
+          "John E. Fiorentino"
+        ],
+        "url": "http://arxiv.org/pdf/0803.4055v1",
+        "published": "2008-03-28 07:47:41+00:00",
+        "doi": "10.1214/07-AOAS153"
+      },
+      {
+        "title": "Explainable AI for Embedded Systems Design: A Case Study of Static Redundant NVM Memory Write Prediction",
+        "summary": "This paper investigates the application of eXplainable Artificial\nIntelligence (XAI) in the design of embedded systems using machine learning\n(ML). As a case study, it addresses the challenging problem of static silent\nstore prediction. This involves identifying redundant memory writes based only\non static program features. Eliminating such stores enhances performance and\nenergy efficiency by reducing memory access and bus traffic, especially in the\npresence of emerging non-volatile memory technologies. To achieve this, we\npropose a methodology consisting of: 1) the development of relevant ML models\nfor explaining silent store prediction, and 2) the application of XAI to\nexplain these models. We employ two state-of-the-art model-agnostic XAI methods\nto analyze the causes of silent stores. Through the case study, we evaluate the\neffectiveness of the methods. We find that these methods provide explanations\nfor silent store predictions, which are consistent with known causes of silent\nstore occurrences from previous studies. Typically, this allows us to confirm\nthe prevalence of silent stores in operations that write the zero constant into\nmemory, or the absence of silent stores in operations involving loop induction\nvariables. This suggests the potential relevance of XAI in analyzing ML models'\ndecision in embedded system design. From the case study, we share some valuable\ninsights and pitfalls we encountered. More generally, this study aims to lay\nthe groundwork for future research in the emerging field of XAI for embedded\nsystem design.",
+        "authors": [
+          "Abdoulaye Gamatié",
+          "Yuyang Wang"
+        ],
+        "url": "http://arxiv.org/pdf/2403.04337v1",
+        "published": "2024-03-07 09:02:11+00:00",
+        "doi": null
+      },
+      {
+        "title": "The Effects of Political Martyrdom on Election Results: The Assassination of Abe",
+        "summary": "In developed nations assassinations are rare and thus the impact of such acts\non the electoral and political landscape is understudied. In this paper, we\nfocus on Twitter data to examine the effects of Japan's former Primer Minister\nAbe's assassination on the Japanese House of Councillors elections in 2022. We\nutilize sentiment analysis and emotion detection together with topic modeling\non over 2 million tweets and compare them against tweets during previous\nelection cycles. Our findings indicate that Twitter sentiments were negatively\nimpacted by the event in the short term and that social media attention span\nhas shortened. We also discuss how \"necropolitics\" affected the outcome of the\nelections in favor of the deceased's party meaning that there seems to have\nbeen an effect of Abe's death on the election outcome though the findings\nwarrant further investigation for conclusive results.",
+        "authors": [
+          "Miu Nicole Takagi"
+        ],
+        "url": "http://arxiv.org/pdf/2305.18004v2",
+        "published": "2023-05-29 10:33:08+00:00",
+        "doi": "10.46298/jdmdh.11391"
+      },
+      {
+        "title": "Harnessing AI for Speech Reconstruction using Multi-view Silent Video Feed",
+        "summary": "Speechreading or lipreading is the technique of understanding and getting\nphonetic features from a speaker's visual features such as movement of lips,\nface, teeth and tongue. It has a wide range of multimedia applications such as\nin surveillance, Internet telephony, and as an aid to a person with hearing\nimpairments. However, most of the work in speechreading has been limited to\ntext generation from silent videos. Recently, research has started venturing\ninto generating (audio) speech from silent video sequences but there have been\nno developments thus far in dealing with divergent views and poses of a\nspeaker. Thus although, we have multiple camera feeds for the speech of a user,\nbut we have failed in using these multiple video feeds for dealing with the\ndifferent poses. To this end, this paper presents the world's first ever\nmulti-view speech reading and reconstruction system. This work encompasses the\nboundaries of multimedia research by putting forth a model which leverages\nsilent video feeds from multiple cameras recording the same subject to generate\nintelligent speech for a speaker. Initial results confirm the usefulness of\nexploiting multiple camera views in building an efficient speech reading and\nreconstruction system. It further shows the optimal placement of cameras which\nwould lead to the maximum intelligibility of speech. Next, it lays out various\ninnovative applications for the proposed system focusing on its potential\nprodigious impact in not just security arena but in many other multimedia\nanalytics problems.",
+        "authors": [
+          "Yaman Kumar",
+          "Mayank Aggarwal",
+          "Pratham Nawal",
+          "Shin'ichi Satoh",
+          "Rajiv Ratn Shah",
+          "Roger Zimmerman"
+        ],
+        "url": "http://arxiv.org/pdf/1807.00619v2",
+        "published": "2018-07-02 12:16:55+00:00",
+        "doi": "10.1145/3240508.3241911"
+      }
+    ],
+    "analysis": "Error: Unable to generate analysis.",
+    "timestamp": "2025-01-10 09:42:39.031046"
+  },
+  {
+    "product_data": {
+      "product_name": "Bevzilla 75 Grams X 4 Flavoured Instant Coffee Powder |Strong Coffee Instant Coffee",
+      "current_price": "₹595",
+      "original_price": "₹1,500",
+      "discount_percentage": "60% off",
+      "rating": "4.2",
+      "review_count": "370",
+      "seller_name": "BEVZILLAPvtLtd",
+      "available_offers": [
+        "Combo Offer Buy 2 items save ₹20; Buy 3 or more save ₹40",
+        "Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
+        "Special Price Get extra 7% off (price inclusive of cashback/coupon)"
+      ],
+      "product_highlights": [
+        "Balanced, smooth, and strong without any bitterness with subtle aromatic & delicious notes of pure coffee.",
+        "Gluten-free & Vegan friendly with no preservatives, no additives and no added sugar.",
+        "Tastes Amazing with Hot/Cold with Water/Milk."
+      ]
+    },
+    "papers": [
+      {
+        "title": "Exploring the link between coffee matrix microstructure and flow properties using combined X-ray microtomography and smoothed particle hydrodynamics simulations",
+        "summary": "Coffee extraction involves many complex physical and transport processes\nextremely difficult to model. Among the many factors that will affect the final\nquality of coffee, the microstructure of the coffee matrix is one of the most\ncritical ones. In this article, we use X-ray micro-computed (microCT) technique\nto capture the microscopic details of coffee matrices at particle-level and\nperform fluid dynamics simulation based on the smoothed particle hydrodynamics\nmethod (SPH) with the 3D reconstructured data. Information like flow\npermeability and tortuosity of the matrices can be therefore obtained from our\nsimulation. We found that inertial effects can be quite significant at the\nnormal pressure gradient conditions typical for espresso brewing, and can\nprovide an explanation for the inconsistency of permeability measurements seen\nin the literature. Several types of coffee powder are further examined,\nrevealing their distinct microscopic details and resulting flow features. By\ncomparing the microCT images of pre- and post-extraction coffee matrices, it is\nfound that a decreasing porosity profile (from the bottom-outlet to the\ntop-inlet) always develops after extraction. This counterintuitive phenomenon\ncan be explained using a pressure-dependent erosion model proposed in our prior\nwork. Our results show that microCT scan can provide useful microscopic details\nfor coffee extraction modelling and establish the basis for a data-driven\nnumerical framework to explore the link between coffee powder microstructure\nand extraction dynamics. The latter is the prerequisite to study the time\nevolution of both volatile and non-volatile organic compounds and then the\nflavour profile of coffee brews.",
+        "authors": [
+          "Chaojie Mo",
+          "Richard Johnston",
+          "Luciano Navarini",
+          "Furio Suggi Liverani",
+          "Marco Ellero"
+        ],
+        "url": "http://arxiv.org/pdf/2305.03911v2",
+        "published": "2023-05-06 03:18:41+00:00",
+        "doi": "10.1038/s41598-023-42380-y"
+      },
+      {
+        "title": "At Your Service: Coffee Beans Recommendation From a Robot Assistant",
+        "summary": "With advances in the field of machine learning, precisely algorithms for\nrecommendation systems, robot assistants are envisioned to become more present\nin the hospitality industry. Additionally, the COVID-19 pandemic has also\nhighlighted the need to have more service robots in our everyday lives, to\nminimise the risk of human to-human transmission. One such example would be\ncoffee shops, which have become intrinsic to our everyday lives. However,\nserving an excellent cup of coffee is not a trivial feat as a coffee blend\ntypically comprises rich aromas, indulgent and unique flavours and a lingering\naftertaste. Our work addresses this by proposing a computational model which\nrecommends optimal coffee beans resulting from the user's preferences.\nSpecifically, given a set of coffee bean properties (objective features), we\napply different supervised learning techniques to predict coffee qualities\n(subjective features). We then consider an unsupervised learning method to\nanalyse the relationship between coffee beans in the subjective feature space.\nEvaluated on a real coffee beans dataset based on digitised reviews, our\nresults illustrate that the proposed computational model gives up to 92.7\npercent recommendation accuracy for coffee beans prediction. From this, we\npropose how this computational model can be deployed on a service robot to\nreliably predict customers' coffee bean preferences, starting from the user\ninputting their coffee preferences to the robot recommending the coffee beans\nthat best meet the user's likings.",
+        "authors": [
+          "Jacopo de Berardinis",
+          "Gabriella Pizzuto",
+          "Francesco Lanza",
+          "Antonio Chella",
+          "Jorge Meira",
+          "Angelo Cangelosi"
+        ],
+        "url": "http://arxiv.org/pdf/2008.13585v1",
+        "published": "2020-08-26 14:03:25+00:00",
+        "doi": null
+      },
+      {
+        "title": "Computer Vision-Aided Intelligent Monitoring of Coffee: Towards Sustainable Coffee Production",
+        "summary": "Coffee which is prepared from the grinded roasted seeds of harvested coffee\ncherries, is one of the most consumed beverage and traded commodity, globally.\nTo manually monitor the coffee field regularly, and inform about plant and soil\nhealth, as well as estimate yield and harvesting time, is labor-intensive,\ntime-consuming and error-prone. Some recent studies have developed sensors for\nestimating coffee yield at the time of harvest, however a more inclusive and\napplicable technology to remotely monitor multiple parameters of the field and\nestimate coffee yield and quality even at pre-harvest stage, was missing.\nFollowing precision agriculture approach, we employed machine learning\nalgorithm YOLO, for image processing of coffee plant. In this study, the latest\nversion of the state-of-the-art algorithm YOLOv7 was trained with 324 annotated\nimages followed by its evaluation with 82 unannotated images as test data.\nNext, as an innovative approach for annotating the training data, we trained\nK-means models which led to machine-generated color classes of coffee fruit and\ncould thus characterize the informed objects in the image. Finally, we\nattempted to develop an AI-based handy mobile application which would not only\nefficiently predict harvest time, estimate coffee yield and quality, but also\ninform about plant health. Resultantly, the developed model efficiently\nanalyzed the test data with a mean average precision of 0.89. Strikingly, our\ninnovative semi-supervised method with an mean average precision of 0.77 for\nmulti-class mode surpassed the supervised method with mean average precision of\nonly 0.60, leading to faster and more accurate annotation. The mobile\napplication we designed based on the developed code, was named CoffeApp, which\npossesses multiple features of analyzing fruit from the image taken by phone\ncamera with in field and can thus track fruit ripening in real time.",
+        "authors": [
+          "Francisco Eron",
+          "Muhammad Noman",
+          "Raphael Ricon de Oliveira",
+          "Deigo de Souza Marques",
+          "Rafael Serapilha Durelli",
+          "Andre Pimenta Freire",
+          "Antonio Chalfun Junior"
+        ],
+        "url": "http://arxiv.org/pdf/2304.04966v1",
+        "published": "2023-04-11 04:25:07+00:00",
+        "doi": null
+      },
+      {
+        "title": "Water-induced self-oscillatory processes in colloidal systems by the example of instant coffee",
+        "summary": "Slow long-lived fluctuations of mechanical properties of drying drops of\ninstant coffee water solutions have been found by means of the Drying Drop\nTechnology developed earlier. Parameters of the fluctuations depended on the\nextent of dilution and were not affected by additional hashing of the solution,\nclosing by a cover and shielding from external electromagnetic fields [1-3].\nHere we compared dynamics of physicochemical and morphological processes in\nbulk. We observed microscopically periodic emergence, growth, aggregation and\ndisappearance of spherical cavities (50-250 micrometers in diameter) in bulk of\ndispersion, which was followed by agreed fluctuations of physicochemical\nparameters of the colloidal system. We have shown that those spheres were huge\nhydrate covers of liquid crystal water around colloidal particles. Phase\ntransitions between free and bound (liquid crystal) water in a bulk of a\ncolloidal system is a pacemaker of fluctuations of its physicochemical\nproperties. These changes are regulated and coordinated by the value of osmotic\npressure. At low osmotic pressure hydrate covers grow, forcing out particles\nand ions into the bulk; at high osmotic pressure they collapse to small size,\nreducing osmotic pressure. Existence of self-oscillatory processes was\nconfirmed by a mathematical model.",
+        "authors": [
+          "Tatiana A. Yakhno",
+          "Vladimir G. Yakhno"
+        ],
+        "url": "http://arxiv.org/pdf/1610.04433v2",
+        "published": "2016-10-14 12:37:29+00:00",
+        "doi": null
+      },
+      {
+        "title": "Annihilative fractals of coffee on milk formed by Rayleigh-Taylor instability",
+        "summary": "We have discovered a new fractal pattern, coffee exhibits on a horizontal\nsurface, with a fractal dimension $1.88 \\pm 0.06$, when a heavy coffee droplet\ninteracts with the surface of lighter milk. Parts of coffee pattern on the\nsurface disappear due to Rayleigh-Taylor instability, and the annihilative\nbehavior produces the fractal pattern. Coffee fractals and the Sierpinski\ncarpet have common features, such as the fractal dimension, annihilative\nbehavior, and an exponential decrease of the pattern area. It is suggested the\nformation of fractal follows a rule similar to that of the Sierpinski carpet.",
+        "authors": [
+          "Michiko Shimokawa",
+          "Shonosuke Ohta"
+        ],
+        "url": "http://arxiv.org/pdf/0809.2458v1",
+        "published": "2008-09-15 08:20:44+00:00",
+        "doi": null
+      }
+    ],
+    "analysis": "Error: Unable to generate analysis.",
+    "timestamp": "2025-01-10 09:43:53.475169"
+  },
+  {
+    "product_data": {
+      "product_name": "MSI Sword 16 HX Intel Core i7 14th Gen 14700HX",
+      "current_price": "₹134,990",
+      "original_price": "₹151,990",
+      "discount_percentage": "11% off",
+      "available_offers": [
+        "Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card T&C",
+        "Bank Offer 10% off up to ₹750 on HDFC Bank Credit Card EMI on 3 months tenure. Min. Txn Value: ₹5000 T&C",
+        "Bank Offer 10% off up to ₹1,200 on HDFC Bank Credit Card EMI on 6 and 9 months tenure. Min Txn Value: ₹5000 T&C"
+      ],
+      "seller_name": "SVPeripherals",
+      "rating": "3.7",
+      "review_count": "3 Ratings & 0 Reviews",
+      "product_highlights": [
+        "16 Inch FHD+ , 144Hz, IPS-level panel",
+        "Light Laptop without Optical Disk Drive",
+        "Easy Payment Options",
+        "No cost EMI starting from ₹14,999/month",
+        "Cash on Delivery",
+        "Net banking & Credit/ Debit/ ATM card"
+      ]
+    },
+    "papers": [
+      {
+        "title": "Emerging Technologies in Mass Spectrometry Imaging",
+        "summary": "Mass spectrometry imaging (MSI) as an analytical tool for bio-molecular and\nbio-medical research targets, accurate compound localization and\nidentification. In terms of dedicated instrumentation, this translates into the\ndemand for more detail in the image dimension (spatial resolution) and in the\nspectral dimension (mass resolution and accuracy), preferably combined in one\ninstrument. At the same time, large area biological tissue samples require fast\nacquisition schemes, instrument automation and a robust data infrastructure.\nThis review discusses the analytical capabilities of an \"ideal\" MSI instrument\nfor bio-molecular and bio-medical molecular imaging. The analytical attributes\nof such an ideal system are contrasted with technological and methodological\nchallenges in MSI. In particular, innovative instrumentation for high spatial\nresolution imaging in combination with high sample throughput is discussed.\nDetector technology that targets various shortcomings of conventional imaging\ndetector systems is highlighted. The benefits of accurate mass analysis, high\nmass resolving power, additional separation strategies and multimodal\nthree-dimensional data reconstruction algorithms are discussed to provide the\nreader with an insight in the current technological advances and the potential\nof MSI for bio-medical research.",
+        "authors": [
+          "Julia H. Jungmann",
+          "Ron M. A. Heeren"
+        ],
+        "url": "http://arxiv.org/pdf/1305.5433v1",
+        "published": "2013-05-23 14:24:16+00:00",
+        "doi": null
+      },
+      {
+        "title": "Timing the Transient Execution: A New Side-Channel Attack on Intel CPUs",
+        "summary": "The transient execution attack is a type of attack leveraging the\nvulnerability of modern CPU optimization technologies. New attacks surface\nrapidly. The side-channel is a key part of transient execution attacks to leak\ndata. In this work, we discover a vulnerability that the change of the EFLAGS\nregister in transient execution may have a side effect on the Jcc (jump on\ncondition code) instruction after it in Intel CPUs. Based on our discovery, we\npropose a new side-channel attack that leverages the timing of both transient\nexecution and Jcc instructions to deliver data. This attack encodes secret data\nto the change of register which makes the execution time of context slightly\nslower, which can be measured by the attacker to decode data. This attack\ndoesn't rely on the cache system and doesn't need to reset the EFLAGS register\nmanually to its initial state before the attack, which may make it more\ndifficult to detect or mitigate. We implemented this side-channel on machines\nwith Intel Core i7-6700, i7-7700, and i9-10980XE CPUs. In the first two\nprocessors, we combined it as the side-channel of the Meltdown attack, which\ncould achieve 100\\% success leaking rate. We evaluate and discuss potential\ndefenses against the attack. Our contributions include discovering security\nvulnerabilities in the implementation of Jcc instructions and EFLAGS register\nand proposing a new side-channel attack that does not rely on the cache system.",
+        "authors": [
+          "Yu Jin",
+          "Pengfei Qiu",
+          "Chunlu Wang",
+          "Yihao Yang",
+          "Dongsheng Wang",
+          "Gang Qu"
+        ],
+        "url": "http://arxiv.org/pdf/2304.10877v1",
+        "published": "2023-04-21 10:40:20+00:00",
+        "doi": null
+      },
+      {
+        "title": "Notes on Refactoring Exponential Macros in Common Lisp",
+        "summary": "I recently consulted for a very big Common Lisp project having more than one\nmillion lines of code (including comments). Let's call it \"System X\" in the\nfollowing. System X suffered from extremely long compilation times; i.e., a\nfull recompile took about 33:17 minutes on a 3.1 GHz MacBook Pro Intel Core i7\nwith SSD and 16 GBs of RAM, using ACL 10.1. It turns out that a number of\nmacros were causing an exponential code blowup. With these macros refactored,\nthe system then recompiled in 5:30 minutes - a speedup by a factor of ~ 6. In\nthis experience report, I will first illuminate the problem, and then\ndemonstrate two potential solutions in terms of macro refactoring techniques.\nThese techniques can be applied in related scenarios.",
+        "authors": [
+          "Michael Wessel"
+        ],
+        "url": "http://arxiv.org/pdf/2305.02991v1",
+        "published": "2023-05-04 16:58:02+00:00",
+        "doi": null
+      },
+      {
+        "title": "One machine, one minute, three billion tetrahedra",
+        "summary": "This paper presents a new scalable parallelization scheme to generate the 3D\nDelaunay triangulation of a given set of points. Our first contribution is an\nefficient serial implementation of the incremental Delaunay insertion\nalgorithm. A simple dedicated data structure, an efficient sorting of the\npoints and the optimization of the insertion algorithm have permitted to\naccelerate reference implementations by a factor three. Our second contribution\nis a multi-threaded version of the Delaunay kernel that is able to concurrently\ninsert vertices. Moore curve coordinates are used to partition the point set,\navoiding heavy synchronization overheads. Conflicts are managed by modifying\nthe partitions with a simple rescaling of the space-filling curve. The\nperformances of our implementation have been measured on three different\nprocessors, an Intel core-i7, an Intel Xeon Phi and an AMD EPYC, on which we\nhave been able to compute 3 billion tetrahedra in 53 seconds. This corresponds\nto a generation rate of over 55 million tetrahedra per second. We finally show\nhow this very efficient parallel Delaunay triangulation can be integrated in a\nDelaunay refinement mesh generator which takes as input the triangulated\nsurface boundary of the volume to mesh.",
+        "authors": [
+          "Célestin Marot",
+          "Jeanne Pellerin",
+          "Jean-François Remacle"
+        ],
+        "url": "http://arxiv.org/pdf/1805.08831v3",
+        "published": "2018-05-22 19:40:50+00:00",
+        "doi": "10.1002/nme.5987"
+      },
+      {
+        "title": "Using Detection, Tracking and Prediction in Visual SLAM to Achieve Real-time Semantic Mapping of Dynamic Scenarios",
+        "summary": "In this paper, we propose a lightweight system, RDS-SLAM, based on ORB-SLAM2,\nwhich can accurately estimate poses and build semantic maps at object level for\ndynamic scenarios in real time using only one commonly used Intel Core i7 CPU.\nIn RDS-SLAM, three major improvements, as well as major architectural\nmodifications, are proposed to overcome the limitations of ORB-SLAM2. Firstly,\nit adopts a lightweight object detection neural network in key frames.\nSecondly, an efficient tracking and prediction mechanism is embedded into the\nsystem to remove the feature points belonging to movable objects in all\nincoming frames. Thirdly, a semantic octree map is built by probabilistic\nfusion of detection and tracking results, which enables a robot to maintain a\nsemantic description at object level for potential interactions in dynamic\nscenarios. We evaluate RDS-SLAM in TUM RGB-D dataset, and experimental results\nshow that RDS-SLAM can run with 30.3 ms per frame in dynamic scenarios using\nonly an Intel Core i7 CPU, and achieves comparable accuracy compared with the\nstate-of-the-art SLAM systems which heavily rely on both Intel Core i7 CPUs and\npowerful GPUs.",
+        "authors": [
+          "Xingyu Chen",
+          "Jianru Xue",
+          "Jianwu Fang",
+          "Yuxin Pan",
+          "Nanning Zheng"
+        ],
+        "url": "http://arxiv.org/pdf/2210.04562v1",
+        "published": "2022-10-10 11:03:32+00:00",
+        "doi": "10.1109/IV47402.2020.9304693"
+      }
+    ],
+    "analysis": "Error: Unable to generate analysis.",
+    "timestamp": "2025-01-10 09:44:34.640221"
+  },
+  {
+    "product_data": {
+      "product_name": "Bevzilla 75 Grams X 4 Flavoured Instant Coffee Powder |Strong Coffee Instant Coffee",
+      "current_price": "₹595",
+      "original_price": "₹1,500",
+      "discount_percentage": "60% off",
+      "rating": "4.2",
+      "review_count": "370",
+      "seller_name": "BEVZILLAPvtLtd",
+      "available_offers": [
+        "Combo Offer Buy 2 items save ₹20; Buy 3 or more save ₹40",
+        "Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
+        "Special Price Get extra 7% off (price inclusive of cashback/coupon)"
+      ],
+      "product_highlights": [
+        "Balanced, smooth, and strong without any bitterness with subtle aromatic & delicious notes of pure coffee.",
+        "Gluten-free & Vegan friendly with no preservatives, no additives and no added sugar.",
+        "Tastes Amazing with Hot/Cold with Water/Milk."
+      ]
+    },
+    "papers": [
+      {
+        "title": "Exploring the link between coffee matrix microstructure and flow properties using combined X-ray microtomography and smoothed particle hydrodynamics simulations",
+        "summary": "Coffee extraction involves many complex physical and transport processes\nextremely difficult to model. Among the many factors that will affect the final\nquality of coffee, the microstructure of the coffee matrix is one of the most\ncritical ones. In this article, we use X-ray micro-computed (microCT) technique\nto capture the microscopic details of coffee matrices at particle-level and\nperform fluid dynamics simulation based on the smoothed particle hydrodynamics\nmethod (SPH) with the 3D reconstructured data. Information like flow\npermeability and tortuosity of the matrices can be therefore obtained from our\nsimulation. We found that inertial effects can be quite significant at the\nnormal pressure gradient conditions typical for espresso brewing, and can\nprovide an explanation for the inconsistency of permeability measurements seen\nin the literature. Several types of coffee powder are further examined,\nrevealing their distinct microscopic details and resulting flow features. By\ncomparing the microCT images of pre- and post-extraction coffee matrices, it is\nfound that a decreasing porosity profile (from the bottom-outlet to the\ntop-inlet) always develops after extraction. This counterintuitive phenomenon\ncan be explained using a pressure-dependent erosion model proposed in our prior\nwork. Our results show that microCT scan can provide useful microscopic details\nfor coffee extraction modelling and establish the basis for a data-driven\nnumerical framework to explore the link between coffee powder microstructure\nand extraction dynamics. The latter is the prerequisite to study the time\nevolution of both volatile and non-volatile organic compounds and then the\nflavour profile of coffee brews.",
+        "authors": [
+          "Chaojie Mo",
+          "Richard Johnston",
+          "Luciano Navarini",
+          "Furio Suggi Liverani",
+          "Marco Ellero"
+        ],
+        "url": "http://arxiv.org/pdf/2305.03911v2",
+        "published": "2023-05-06 03:18:41+00:00",
+        "doi": "10.1038/s41598-023-42380-y"
+      },
+      {
+        "title": "At Your Service: Coffee Beans Recommendation From a Robot Assistant",
+        "summary": "With advances in the field of machine learning, precisely algorithms for\nrecommendation systems, robot assistants are envisioned to become more present\nin the hospitality industry. Additionally, the COVID-19 pandemic has also\nhighlighted the need to have more service robots in our everyday lives, to\nminimise the risk of human to-human transmission. One such example would be\ncoffee shops, which have become intrinsic to our everyday lives. However,\nserving an excellent cup of coffee is not a trivial feat as a coffee blend\ntypically comprises rich aromas, indulgent and unique flavours and a lingering\naftertaste. Our work addresses this by proposing a computational model which\nrecommends optimal coffee beans resulting from the user's preferences.\nSpecifically, given a set of coffee bean properties (objective features), we\napply different supervised learning techniques to predict coffee qualities\n(subjective features). We then consider an unsupervised learning method to\nanalyse the relationship between coffee beans in the subjective feature space.\nEvaluated on a real coffee beans dataset based on digitised reviews, our\nresults illustrate that the proposed computational model gives up to 92.7\npercent recommendation accuracy for coffee beans prediction. From this, we\npropose how this computational model can be deployed on a service robot to\nreliably predict customers' coffee bean preferences, starting from the user\ninputting their coffee preferences to the robot recommending the coffee beans\nthat best meet the user's likings.",
+        "authors": [
+          "Jacopo de Berardinis",
+          "Gabriella Pizzuto",
+          "Francesco Lanza",
+          "Antonio Chella",
+          "Jorge Meira",
+          "Angelo Cangelosi"
+        ],
+        "url": "http://arxiv.org/pdf/2008.13585v1",
+        "published": "2020-08-26 14:03:25+00:00",
+        "doi": null
+      },
+      {
+        "title": "Computer Vision-Aided Intelligent Monitoring of Coffee: Towards Sustainable Coffee Production",
+        "summary": "Coffee which is prepared from the grinded roasted seeds of harvested coffee\ncherries, is one of the most consumed beverage and traded commodity, globally.\nTo manually monitor the coffee field regularly, and inform about plant and soil\nhealth, as well as estimate yield and harvesting time, is labor-intensive,\ntime-consuming and error-prone. Some recent studies have developed sensors for\nestimating coffee yield at the time of harvest, however a more inclusive and\napplicable technology to remotely monitor multiple parameters of the field and\nestimate coffee yield and quality even at pre-harvest stage, was missing.\nFollowing precision agriculture approach, we employed machine learning\nalgorithm YOLO, for image processing of coffee plant. In this study, the latest\nversion of the state-of-the-art algorithm YOLOv7 was trained with 324 annotated\nimages followed by its evaluation with 82 unannotated images as test data.\nNext, as an innovative approach for annotating the training data, we trained\nK-means models which led to machine-generated color classes of coffee fruit and\ncould thus characterize the informed objects in the image. Finally, we\nattempted to develop an AI-based handy mobile application which would not only\nefficiently predict harvest time, estimate coffee yield and quality, but also\ninform about plant health. Resultantly, the developed model efficiently\nanalyzed the test data with a mean average precision of 0.89. Strikingly, our\ninnovative semi-supervised method with an mean average precision of 0.77 for\nmulti-class mode surpassed the supervised method with mean average precision of\nonly 0.60, leading to faster and more accurate annotation. The mobile\napplication we designed based on the developed code, was named CoffeApp, which\npossesses multiple features of analyzing fruit from the image taken by phone\ncamera with in field and can thus track fruit ripening in real time.",
+        "authors": [
+          "Francisco Eron",
+          "Muhammad Noman",
+          "Raphael Ricon de Oliveira",
+          "Deigo de Souza Marques",
+          "Rafael Serapilha Durelli",
+          "Andre Pimenta Freire",
+          "Antonio Chalfun Junior"
+        ],
+        "url": "http://arxiv.org/pdf/2304.04966v1",
+        "published": "2023-04-11 04:25:07+00:00",
+        "doi": null
+      },
+      {
+        "title": "Water-induced self-oscillatory processes in colloidal systems by the example of instant coffee",
+        "summary": "Slow long-lived fluctuations of mechanical properties of drying drops of\ninstant coffee water solutions have been found by means of the Drying Drop\nTechnology developed earlier. Parameters of the fluctuations depended on the\nextent of dilution and were not affected by additional hashing of the solution,\nclosing by a cover and shielding from external electromagnetic fields [1-3].\nHere we compared dynamics of physicochemical and morphological processes in\nbulk. We observed microscopically periodic emergence, growth, aggregation and\ndisappearance of spherical cavities (50-250 micrometers in diameter) in bulk of\ndispersion, which was followed by agreed fluctuations of physicochemical\nparameters of the colloidal system. We have shown that those spheres were huge\nhydrate covers of liquid crystal water around colloidal particles. Phase\ntransitions between free and bound (liquid crystal) water in a bulk of a\ncolloidal system is a pacemaker of fluctuations of its physicochemical\nproperties. These changes are regulated and coordinated by the value of osmotic\npressure. At low osmotic pressure hydrate covers grow, forcing out particles\nand ions into the bulk; at high osmotic pressure they collapse to small size,\nreducing osmotic pressure. Existence of self-oscillatory processes was\nconfirmed by a mathematical model.",
+        "authors": [
+          "Tatiana A. Yakhno",
+          "Vladimir G. Yakhno"
+        ],
+        "url": "http://arxiv.org/pdf/1610.04433v2",
+        "published": "2016-10-14 12:37:29+00:00",
+        "doi": null
+      },
+      {
+        "title": "Annihilative fractals of coffee on milk formed by Rayleigh-Taylor instability",
+        "summary": "We have discovered a new fractal pattern, coffee exhibits on a horizontal\nsurface, with a fractal dimension $1.88 \\pm 0.06$, when a heavy coffee droplet\ninteracts with the surface of lighter milk. Parts of coffee pattern on the\nsurface disappear due to Rayleigh-Taylor instability, and the annihilative\nbehavior produces the fractal pattern. Coffee fractals and the Sierpinski\ncarpet have common features, such as the fractal dimension, annihilative\nbehavior, and an exponential decrease of the pattern area. It is suggested the\nformation of fractal follows a rule similar to that of the Sierpinski carpet.",
+        "authors": [
+          "Michiko Shimokawa",
+          "Shonosuke Ohta"
+        ],
+        "url": "http://arxiv.org/pdf/0809.2458v1",
+        "published": "2008-09-15 08:20:44+00:00",
+        "doi": null
+      }
+    ],
+    "analysis": "Error: Unable to generate analysis.",
+    "timestamp": "2025-01-10 09:47:13.775200"
+  },
+  {
+    "product_data": {
+      "product_name": "SONY PLAYSTATION 2",
+      "current_price": "₹ 151990.00"
+    },
+    "papers": [
+      {
+        "title": "Parkinson's disease patient rehabilitation using gaming platforms: lessons learnt",
+        "summary": "Parkinson's disease (PD) is a progressive neurodegenerative movement disorder\nwhere motor dysfunction gradually increases as the disease progress. In\naddition to administering dopaminergic PD-specific drugs, attending\nneurologists strongly recommend regular exercise combined with physiotherapy.\nHowever, because of the long-term nature of the disease, patients following\ntraditional rehabilitation programs may get bored, lose interest and eventually\ndrop out as a direct result of the repeatability and predictability of the\nprescribed exercises. Technology supported opportunities to liven up a daily\nexercise schedule have appeared in the form of character-based, virtual reality\ngames which promote physical training in a non-linear and looser fashion and\nprovide an experience that varies from one game loop the next. Such\n\"exergames\", a word that results from the amalgamation of the words \"exercise\"\nand \"game\" challenge patients into performing movements of varying complexity\nin a playful and immersive virtual environment. Today's game consoles such as\nNintendo's Wii, Sony PlayStation Eye and Microsoft's Kinect sensor present new\nopportunities to infuse motivation and variety to an otherwise mundane\nphysiotherapy routine. In this paper we present some of these approaches,\ndiscuss their suitability for these PD patients, mainly on the basis of demands\nmade on balance, agility and gesture precision, and present design principles\nthat exergame platforms must comply with in order to be suitable for PD\npatients.",
+        "authors": [
+          "Ioannis Pachoulakis",
+          "Nikolaos Papadopoulos",
+          "Cleanthe Spanaki"
+        ],
+        "url": "http://arxiv.org/pdf/1511.02589v1",
+        "published": "2015-11-09 07:36:22+00:00",
+        "doi": "10.5121/ijbes.2015.2401"
+      },
+      {
+        "title": "The Economic Trend of Video Game Industry",
+        "summary": "In recent years the game industry has had a huge growth. We've seen new game\nconsoles, great looking games and an increase in the number of people playing\nthem. We are presently in the seventh generation of video games which focuses\non consoles released since 2004. For home consoles,the seventh generation began\non November 22, 2005 with the release of Xbox 360 and continued with the\nrelease of PlayStation 3 on November 11, 2006, and Wii on November 19, 2006.\nThe current generation is having a console battle between Nintendo's Wii,\nMicrosoft's Xbox 360, and Sony's PlayStation 3.The appearance of the three new\nconsoles not only offers various purchase choices, but also greatly affects\neconomy and culture.",
+        "authors": [
+          "Guanxi Zhuang",
+          "Hai Zhang",
+          "Xia Liu"
+        ],
+        "url": "http://arxiv.org/pdf/1307.7058v1",
+        "published": "2013-07-25 08:53:02+00:00",
+        "doi": null
+      },
+      {
+        "title": "Attainment Ratings for Graph-Query Recommendation",
+        "summary": "The video game industry is larger than both the film and music industries\ncombined. Recommender systems for video games have received relatively scant\nacademic attention, despite the uniqueness of the medium and its data. In this\npaper, we introduce a graph-based recommender system that makes use of\ninteractivity, arguably the most significant feature of video gaming. We show\nthat the use of implicit data that tracks user-game interactions and levels of\nattainment (e.g. Sony Playstation Trophies, Microsoft Xbox Achievements) has\nhigh predictive value when making recommendations. Furthermore, we argue that\nthe characteristics of the video gaming hobby (low cost, high duration,\nsocially relevant) make clear the necessity of personalized, individual\nrecommendations that can incorporate social networking information. We\ndemonstrate the natural suitability of graph-query based recommendation for\nthis purpose.",
+        "authors": [
+          "Hal Cooper",
+          "Garud Iyengar",
+          "Ching-Yung Lin"
+        ],
+        "url": "http://arxiv.org/pdf/1808.05988v1",
+        "published": "2018-08-17 20:35:56+00:00",
+        "doi": null
+      },
+      {
+        "title": "User Interface for Volume Rendering in Virtual Reality Environments",
+        "summary": "Volume Rendering applications require sophisticated user interaction for the\ndefinition and refinement of transfer functions. Traditional 2D desktop user\ninterface elements have been developed to solve this task, but such concepts do\nnot map well to the interaction devices available in Virtual Reality\nenvironments.\n  In this paper, we propose an intuitive user interface for Volume Rendering\nspecifically designed for Virtual Reality environments. The proposed interface\nallows transfer function design and refinement based on intuitive two-handed\noperation of Wand-like controllers. Additional interaction modes such as\nnavigation and clip plane manipulation are supported as well.\n  The system is implemented using the Sony PlayStation Move controller system.\nThis choice is based on controller device capabilities as well as application\nand environment constraints.\n  Initial results document the potential of our approach.",
+        "authors": [
+          "Jonathan Klein",
+          "Dennis Reuling",
+          "Jan Grimm",
+          "Andreas Pfau",
+          "Damien Lefloch",
+          "Martin Lambers",
+          "Andreas Kolb"
+        ],
+        "url": "http://arxiv.org/pdf/1302.2024v1",
+        "published": "2013-02-08 13:11:39+00:00",
+        "doi": null
+      },
+      {
+        "title": "Transforming Business with Generative AI: Research, Innovation, Market Deployment and Future Shifts in Business Models",
+        "summary": "This paper explores the transformative impact of Generative AI (GenAI) on the\nbusiness landscape, examining its role in reshaping traditional business\nmodels, intensifying market competition, and fostering innovation. By applying\nthe principles of Neo-Schumpeterian economics, the research analyses how GenAI\nis driving a new wave of \"creative destruction,\" leading to the emergence of\nnovel business paradigms and value propositions. The findings reveal that GenAI\nenhances operational efficiency, facilitates product and service innovation,\nand creates new revenue streams, positioning it as a powerful catalyst for\nsubstantial shifts in business structures and strategies. However, the\ndeployment of GenAI also presents significant challenges, including ethical\nconcerns, regulatory demands, and the risk of job displacement. By addressing\nthe multifarious nature of GenAI, this paper provides valuable insights for\nbusiness leaders, policymakers, and researchers, guiding them towards a\nbalanced and responsible integration of this transformative technology.\nUltimately, GenAI is not merely a technological advancement but a driver of\nprofound change, heralding a future where creativity, efficiency, and growth\nare redefined.",
+        "authors": [
+          "Narotam Singh",
+          "Vaibhav Chaudhary",
+          "Nimisha Singh",
+          "Neha Soni",
+          "Amita Kapoor"
+        ],
+        "url": "http://arxiv.org/pdf/2411.14437v1",
+        "published": "2024-11-04 17:41:05+00:00",
+        "doi": null
+      }
+    ],
+    "analysis": "Error: Unable to generate analysis.",
+    "timestamp": "2025-01-10 09:47:52.686561"
+  },
+  {
+    "product_data": {
+      "product_name": "SLIM LAPTOPS",
+      "current_price": "₹ 151990.00"
+    },
+    "papers": [
+      {
+        "title": "Qubit Optimized Quantum Implementation of SLIM",
+        "summary": "The advent of quantum computing has profound implications for current\ntechnologies, offering advancements in optimization while posing significant\nthreats to cryptographic algorithms. Public-key cryptosystems relying on prime\nfactorization or discrete logarithms are particularly vulnerable, whereas block\nciphers (BCs) remain secure through increased key lengths. In this study, we\nintroduce a novel quantum implementation of SLIM, a lightweight block cipher\noptimized for 32-bit plaintext and an 80-bit key, based on a Feistel structure.\nThis implementation distinguishes itself from other BC quantum implementations\nin its class (64-128-bit) by utilizing a minimal number of qubits while\nmaintaining robust cryptographic strength and efficiency. By employing an\ninnovative design that minimizes qubit usage, this work highlights SLIM's\npotential as a resource-efficient and secure candidate for quantum-resistant\nencryption protocols.",
+        "authors": [
+          "Hasan Ozgur Cildiroglu",
+          "Oguz Yayla"
+        ],
+        "url": "http://arxiv.org/pdf/2412.10835v1",
+        "published": "2024-12-14 13:52:36+00:00",
+        "doi": null
+      },
+      {
+        "title": "Slim: interoperable slide microscopy viewer and annotation tool for imaging data science and computational pathology",
+        "summary": "The exchange of large and complex slide microscopy imaging data in biomedical\nresearch and pathology practice is impeded by a lack of data standardization\nand interoperability, which is detrimental to the reproducibility of scientific\nfindings and clinical integration of technological innovations. Slim is an\nopen-source, web-based slide microscopy viewer that implements the\ninternationally accepted Digital Imaging and Communications in Medicine (DICOM)\nstandard to achieve interoperability with a multitude of existing medical\nimaging systems. We showcase the capabilities of Slim as the slide microscopy\nviewer of the NCI Imaging Data Commons and demonstrate how the viewer enables\ninteractive visualization of traditional brightfield microscopy and\nhighly-multiplexed immunofluorescence microscopy images from The Cancer Genome\nAtlas and Human Tissue Atlas Network, respectively, using standard DICOMweb\nservices. We further show how Slim enables the collection of standardized image\nannotations for the development or validation of machine learning models and\nthe visual interpretation of model inference results in the form of\nsegmentation masks, spatial heat maps, or image-derived measurements.",
+        "authors": [
+          "Chris Gorman",
+          "Davide Punzo",
+          "Igor Octaviano",
+          "Steve Pieper",
+          "William J. R. Longabaugh",
+          "David A. Clunie",
+          "Ron Kikinis",
+          "Andrey Y. Fedorov",
+          "Markus D. Herrmann"
+        ],
+        "url": "http://arxiv.org/pdf/2205.09122v2",
+        "published": "2022-05-18 17:06:07+00:00",
+        "doi": "10.1038/s41467-023-37224-2"
+      },
+      {
+        "title": "Spatial light interference microscopy (SLIM): principle and applications to biomedicine",
+        "summary": "In this paper, we review spatial light interference microscopy (SLIM), a\ncommon-path, phase-shifting interferometer, built onto a phase-contrast\nmicroscope, with white-light illumination. As one of the most sensitive\nquantitative phase imaging (QPI) methods, SLIM allows for speckle-free phase\nreconstruction with sub-nanometer path-length stability. We first review image\nformation in QPI, scattering, holography, and microcopy. Then, we outline SLIM\nimaging from theory to instrumentation. Zernike phase-contrast microscopy,\nphase retrieval in SLIM, and halo removal algorithms are discussed. Next, we\ndiscuss the requirements for operation, with a focus on software developed\nin-house for SLIM that high-throughput acquisition, whole slide scanning,\nmosaic tile registration, and imaging with a color camera. Lastly, we review\nthe applications of SLIM in basic science and clinical studies. SLIM can study\ncell dynamics, cell growth and proliferation, cell migration, and mass\ntransport, etc. In clinical settings, SLIM can assist with cancer studies,\nreproductive technology, and blood testing, etc. Finally, we review an emerging\ntrend, where SLIM imaging in conjunction with artificial intelligence (AI)\nbrings computational specificity and, in turn, offers new solutions to\noutstanding challenges in cell biology and pathology.",
+        "authors": [
+          "Xi Chen",
+          "Mikhail E. Kandel",
+          "Gabriel Popescu"
+        ],
+        "url": "http://arxiv.org/pdf/2012.08801v1",
+        "published": "2020-12-16 08:56:08+00:00",
+        "doi": null
+      },
+      {
+        "title": "Laptop Theft in a University Setting can be Avoided with Warnings",
+        "summary": "Laptops have become an indispensable asset in today's digital age. They often\ncontain highly sensitive information, such as credentials and confidential\ndocuments. As a result, the value of a laptop is an accumulation of the value\nof both the physical device itself and the cyber assets it contains, making it\na lucrative target for theft. Educational institutions have a large population\nof potential victims of laptop theft. To mitigate this risk, we investigate\nwhether a simple warning sign can reduce the opportunity for potential\noffenders. To this end, we have conducted an empirical study to observe the\nprevalence of students/staff leaving their laptops unattended at a university\nstudy hall at the Delft University of Technology in the Netherlands, both with\nand without a warning sign. We observed 148 out of 220 subjects leaving their\nlaptops unattended in just three weeks. The results also showed that without\nthe warning banner, 75.5% (83 out of 110) of subjects left their laptops\nunattended and with the warning, only 59.1% (65 out of 110) of subjects showed\nthe same behavior, which is a significant reduction of 16.4%. In addition, a\nqualitative analysis was performed on the responses of subjects who left their\nlaptops unattended after the warning banner was placed. The results showed a\nmix of convenience, and a blind trust on the safety of the faculty. In\nconclusion, a simple banner was effective in reducing the opportunity for\nlaptop theft. However, the percentage of laptops left unattended was still high\neven after the introduction of the banner.",
+        "authors": [
+          "Azqa Nadeem",
+          "Marianne Junger"
+        ],
+        "url": "http://arxiv.org/pdf/1907.08083v3",
+        "published": "2019-07-18 14:36:52+00:00",
+        "doi": null
+      },
+      {
+        "title": "An Analysis of the Relationship Between the Characteristics of Innovative Consumers and the Degree of Serious Leisure in User Innovation",
+        "summary": "This study examines the relationship between the concept of serious leisure\nand user innovation. We adopted the characteristics of innovative consumers\nidentified by Luthje (2004)-product use experience, information exchange, and\nnew product adoption speed-to analyze their correlation with serious leisure\nengagement. The analysis utilized consumer behavior survey data from the\n\"Marketing Analysis Contest 2023\" sponsored by Nomura Research Institute,\nexamining the relationship between innovative consumer characteristics and the\ndegree of serious leisure (Serious Leisure Inventory and Measure: SLIM). Since\nthe contest data did not directly measure innovative consumer characteristics\nor serious leisure engagement, we established alternative variables for\nquantitative analysis. The results showed that the SLIM alternative variable\nhad positive correlations with diverse product experiences and early adoption\nof new products. However, no clear relationship was found with information\nexchange among consumers. These findings suggest that serious leisure practice\nmay serve as a potential antecedent to user innovation. The leisure career\nperspective of the serious leisure concept may capture the motivations of user\ninnovators that Okada and Nishikawa (2019) identified.",
+        "authors": [
+          "Taichi Abe",
+          "Yasunobu Morita"
+        ],
+        "url": "http://arxiv.org/pdf/2412.13556v1",
+        "published": "2024-12-18 07:13:17+00:00",
+        "doi": null
+      }
+    ],
+    "analysis": "Error: Unable to generate analysis.",
+    "timestamp": "2025-01-10 09:57:05.853795"
+  }
+]
