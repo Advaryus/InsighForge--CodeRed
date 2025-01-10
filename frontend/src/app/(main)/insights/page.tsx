@@ -52,7 +52,10 @@ export default function AIInsightsPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const data: AIInsightsResponse = await fetchAIInsights(competitorURL, ownerURL);
+      const data: AIInsightsResponse = await fetchAIInsights(
+        competitorURL,
+        ownerURL
+      );
       if (data.answer) {
         setInsights(data.answer);
       } else {
@@ -106,8 +109,8 @@ export default function AIInsightsPage() {
             required
             className="h-12 text-lg"
           />
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             disabled={loading}
             className="h-12 text-lg font-semibold"
           >
@@ -115,7 +118,8 @@ export default function AIInsightsPage() {
               "Loading..."
             ) : (
               <>
-                <Search className="mr-2 h-5 w-5" /> Compare and Generate Insights
+                <Search className="mr-2 h-5 w-5" /> Compare and Generate
+                Insights
               </>
             )}
           </Button>

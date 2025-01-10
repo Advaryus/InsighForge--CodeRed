@@ -61,7 +61,7 @@ def fetch_product_data(product_url):
         print(f"Failed to fetch the webpage. Status code: {response.status_code}")
         return None
 
-@app.route('/fetch-product-data', methods=['POST'])
+
 def fetch_product_data_endpoint():
     urls = request.json.get('urls', [])
     results = []

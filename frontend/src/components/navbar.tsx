@@ -18,12 +18,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const navItems = [
-  { name: "Home", href: "/" },
   { name: "Compare", href: "/chatbot" },
   { name: "Meta", href: "/meta" },
   { name: "Insight", href: "/insights" },
   { name: "About", href: "/about" },
   { name: "Reports", href: "/innovate" },
+  { name: "Price Tracker", href: "/priceTracker" },
 ];
 
 const Navbar = () => {

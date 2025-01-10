@@ -1,62 +1,68 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Search, Plus, X } from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Search, Plus, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 // Simulated API call
-const fetchKeywords = async (websites: string[], question: string): Promise<string> => {
-  const response = await fetch('http://127.0.0.1:5000/processmeta', {
-    method: 'POST',
+const fetchKeywords = async (
+  websites: string[],
+  question: string
+): Promise<string> => {
+  const response = await fetch("http://127.0.0.1:5000/processmeta", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify({ websites, question })
-  })
+    body: JSON.stringify({ websites, question }),
+  });
 
   if (!response.ok) {
-    throw new Error('Failed to fetch keywords')
+    throw new Error("Failed to fetch keywords");
   }
 
-  const data = await response.json()
-  return data.answer
-}
+  const data = await response.json();
+  return data.answer;
+};
 
 export default function ProductAnalyzerPage() {
-  const [urls, setUrls] = useState<string[]>([])
-  const [currentUrl, setCurrentUrl] = useState("")
-  const [keywords, setKeywords] = useState<string | null>(null)
-  const [loading, setLoading] = useState(false)
+  const [urls, setUrls] = useState<string[]>([]);
+  const [currentUrl, setCurrentUrl] = useState("");
+  const [keywords, setKeywords] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const handleAddUrl = () => {
     if (currentUrl && !urls.includes(currentUrl)) {
-      setUrls([...urls, currentUrl])
-      setCurrentUrl("")
+      setUrls([...urls, currentUrl]);
+      setCurrentUrl("");
     }
-  }
+  };
 
   const handleRemoveUrl = (urlToRemove: string) => {
-    setUrls(urls.filter(url => url !== urlToRemove))
-  }
+    setUrls(urls.filter((url) => url !== urlToRemove));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (urls.length === 0) return
+    e.preventDefault();
+    if (urls.length === 0) return;
 
-    setLoading(true)
+    setLoading(true);
     try {
-      const result = await fetchKeywords(urls, "What are the best keywords for my product?")
-      setKeywords(result)
+      const result = await fetchKeywords(
+        urls,
+        "What are the best keywords for my product?"
+      );
+      setKeywords(result);
     } catch (error) {
-      console.error("Error fetching keywords:", error)
+      console.error("Error fetching keywords:", error);
       // Handle error (e.g., show error message to user)
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950">
@@ -71,7 +77,7 @@ export default function ProductAnalyzerPage() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center mb-8 mt-20 text-gray-900 dark:text-white"
+          className="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white mt-20"
         >
           Product Keyword Analyzer
         </motion.h1>
@@ -161,5 +167,5 @@ export default function ProductAnalyzerPage() {
         )}
       </div>
     </div>
-  )
+  );
 }
