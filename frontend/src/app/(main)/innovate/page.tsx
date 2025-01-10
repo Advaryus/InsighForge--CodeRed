@@ -93,7 +93,7 @@ export default function InnovatePage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight mt-20 mb-10 text-gray-900 dark:text-white sm:text-6xl">
             Product Analysis
           </h1>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
